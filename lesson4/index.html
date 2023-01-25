@@ -5,73 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="chamber of commerce site plan">
-
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet" />
-
-
-
-    <script defer src="scripts/currentyear.js"></script>
-    <script defer src="scripts/lastmodified.js"></script>
+    <script src="scripts/displayMenu.js" defer></script>
+    <script src="scripts/todaysdate.js" defer></script>
 
     <title>Home</title>
 </head>
 
 <body>
+
     <header>
-        <h1>Idaho Falls Chamber of Commerce Site Plan</h1>
+
+        <div class="header-first_line">
+            <a href="/lesson4"><img src="https://unsplash.it/50/50" alt="logo"></a>
+            <div class="header-title">
+                <h1>Idaho Falls</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <ul id="hamburgerMenu">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">5</a></li>
+            </ul>
+            <div>
+                <span><a href="face.com"><img src="" alt="">hi</a></span>
+                <span>media 2</span>
+            </div>
+            <button id="hamburgerMenuBtn" onclick="displayMenu()">=</button>
+        </div>
+
+        <div id="currentDate"></div>
     </header>
-
-    <nav>
-        <ul class="navigation">
-            <a href="chamber_of_commerce.html" title="chamber_of_commerce">Home</a>
-            <a style="font-weight:bold" href="target_audience.html" title="Target Audience">Target Audience</a>
-            <a style="font-weight:bold" href="design.html" title="Design">Design</a>
-        </ul>
-
-    </nav>
 
     <main>
         <section>
-            <h2>Site Name</h2>
-            <p>Idaho Falls Chamber of Commerce</p>
-            <img src="images/logo.jpg" alt="Logo">
 
+            <img src="https://unsplash.it/200/200" alt="">
+            <div>image text</div>
         </section>
-
-        <Section>
-            <h2>site purpose</h2>
-            <p>The Greater Idaho Falls Chamber of Commerce is a member driven, non-profit
-                organization that serves as the voice of the business community.
-                The Chamber exists to promote business success and enhance the quality of
-                life by being the leader in economic,community and business development.
-            </p>
-        </Section>
-
-        <h2>
-
-        </h2>
-
         <section>
-            <h2>Logo</h2>
-            <img src="images/logo2.jpg" alt="Logo">
-
+            <div>Event</div>
         </section>
+        <section>
+            <div>Weather</div>
+        </section>
+        <section>
+            <div>News Release</div>
+        </section>
+        <section>
+            <div>spotLight 1</div>
+            <div>SpotLight 2</div>
+        </section>
+
     </main>
 
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> | Diane Chase | Chamber of Commerce site | WDD 230 | Last Modified:
-        </p>
-        <p id="lastModified"></p>
-
+        footer
     </footer>
+
+
 </body>
 
 </html>
