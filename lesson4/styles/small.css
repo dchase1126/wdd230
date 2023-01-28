@@ -14,6 +14,7 @@ body {
 header {
   background-color: #83c5be;
   padding: 10px 0px;
+  color: black;
 }
 
 .header-first_line {
@@ -21,6 +22,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 0 20px 0 10px;
+  
 }
 
 .header-first_line a img {
@@ -29,17 +31,24 @@ header {
 
 .header-first_line .header-title h1 {
   font-size: 30px;
+
 }
 
 .navigation {
-  gap: 5px;
+  content: "=";
+  gap: 15px;
   list-style: none;
   position: absolute;
   right: 5px;
+  text-align: center;
+  
 }
 
 .navigation li {
-  display: none;
+  content: "=";
+  display: flex;
+  background-color: beige;
+
 }
 
 .displayAll li {
@@ -48,18 +57,31 @@ header {
 
 .navigation li:first-child {
   display: block;
-  background-color: aliceblue;
 }
+
 
 #menu::before {
   content: "=";
   display: block;
+  
+ 
+}
+
+.navigation li a:hover {
+  background-color: #D6FDFF;
+  border: 3px solid #006d77;
+  width: 25%;
+  height: 10px;
+  padding: 5px 10px;
+   
 }
 
 .header-media_group {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 5px;
+  
 }
 
 .header-first_line .header-media_group img {

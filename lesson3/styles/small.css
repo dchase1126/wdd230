@@ -1,5 +1,5 @@
 header {
-  background-color: brown;
+  background-color: #006d77;
   text-align: center;
   padding: 10px 0;
 }
@@ -56,7 +56,7 @@ section img {
 }
 
 footer p {
-  background-color: brown;
+  background-color: #006d77;
   color: beige;
   text-align: center;
   padding: 20px 0;

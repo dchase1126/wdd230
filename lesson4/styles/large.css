@@ -1,20 +1,62 @@
 @media only screen and (min-width: 1080px) {
   .navigation {
-
     display: flex;
     position: relative;
+    
   }
 
-  .navigation li {display: block;
-  }
+  .navigation li {
+    display: block;
+    border: 3px solid #006d77;
+   /* background-color: beige;*/
+    width: 45%;
+    height: 40px;
+    }
 
-  .navigation li:first-child {
+  .navigation li:first-child  {
     display: none;
+
   }
 
-  
+  li a:hover {
+    background-color: #D6FDFF;
+    /*border: 3px solid #006d77;*/
+    width: 25%;
+    height: 40px;
+    padding: 5px 20px;
+    margin: auto;
 
+  }
+
+  main >*{
+    background-color: white;
+    margin: 5px;
+    height: 300px;
+    
+  }
+  .column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    border-style: solid;
+    border-color: #006d77;
+    
+  }
+
+  .column :first-child { 
+    align-self: center;
+  }
+
+  section .column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: #006d77;
+ 
+  }
 
 }
-
-
