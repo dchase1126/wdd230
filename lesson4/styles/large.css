@@ -1,5 +1,20 @@
 @media only screen and (min-width: 1080px) {
-  .header-first_line #hamburgerMenu {
+  .navigation {
+
     display: flex;
+    position: relative;
   }
+
+  .navigation li {display: block;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  
+
+
 }
+
+

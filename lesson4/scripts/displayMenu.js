@@ -1,9 +1,3 @@
-function displayMenu() {
-    const displayState = document.getElementById("hamburgerMenu").style.display
-    if (displayState == "none") {
-
-        document.getElementById("hamburgerMenu").style.display = "block"
-    } else {
-        document.getElementById("hamburgerMenu").style.display = "none"
-    }
-}
+document.getElementById("menu").addEventListener("click", () => {
+    document.querySelector(".navigation").classList.toggle("displayAll")
+})
