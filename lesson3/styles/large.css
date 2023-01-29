@@ -1,6 +1,22 @@
 /*desktop views****************/
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 60em) {
   section {
     max-width: 30%;
   }
+
+  h1 {
+		font-size: 2rem;
+	}
+
+  nav a {
+		font-size: 1.1rem;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	article:nth-child(3) {
+		grid-column: span 1;
+	}
 }

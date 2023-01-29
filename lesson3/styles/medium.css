@@ -1,22 +1,9 @@
   /*laptop views****************/
   
-@media only screen and (min-width: 360px) {
-
+@media only screen and (min-width: 37.5em) {
 
 header h1 {
     font-size: 35px;
-  }
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-section {
-    max-width: 45%;
-    min-width: 300px;
   }
 
   * {
@@ -28,7 +15,25 @@ section {
     margin: 0 auto;
     max-width: 760px;
   }
+nav ul{
+    display: grid;
+  	grid-template-columns: repeat(5, 1fr); 
+	/*	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));*/
+	} 
 
+  nav a {
+		font-size: 1rem;
+	}
+
+	nav a:hover {
+		/* 	background-color: #bbb;
+	color: #36454f; 
+		--d: 75%;*/
+  background-color: #D6FDFF;
+	color: #5B344E;
+  font-weight: 700;
+	}
+}
 .navigation  {
     list-style: none;
     display: flex;
@@ -41,7 +46,7 @@ section {
 }
 
 .navigation li {
-  flex: 1 1 auto
+  flex: 1  1 auto;
 }
 
 .navigation a {
@@ -55,6 +60,17 @@ text-decoration: none;
 	color: #5B344E;
   font-weight: 700;
 }
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  max-width: 45%;
+  min-width: 300px;
+}
 
 footer  {
   display: flex;
@@ -64,4 +80,4 @@ footer  {
   font-weight: 400;
   padding: 10px 0;
   }
-}
+
