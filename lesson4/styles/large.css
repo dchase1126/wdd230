@@ -1,4 +1,11 @@
 @media only screen and (min-width: 1080px) {
+  nav ul li a {
+    padding: .5rem 1rem;
+    font-size: 2rem;
+}
+
+  
+  /*
   .navigation {
     display: flex;
     position: relative;
@@ -8,7 +15,7 @@
   .navigation li {
     display: block;
     border: 3px solid #006d77;
-   /* background-color: beige;*/
+   /* background-color: beige;
     width: 45%;
     height: 40px;
     }
@@ -20,13 +27,13 @@
 
   li a:hover {
     background-color: #D6FDFF;
-    /*border: 3px solid #006d77;*/
+    /*border: 3px solid #006d77;
     width: 25%;
     height: 40px;
     padding: 5px 20px;
     margin: auto;
-
   }
+  */
 
   main >*{
     background-color: white;

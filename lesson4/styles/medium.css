@@ -12,6 +12,22 @@ main >*{
     height: 300px;
         
 }
+
+nav button {display: none;}
+
+nav ul#primaryNav {
+    display: flex;
+    /*justify-content: flex-end; */  /* or justify-content: center;*/
+    
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    font-size: 2rem;
+} 
+/*
 .column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,6 +49,6 @@ section .column {
     justify-content: space-between;
     border-style: solid;
     border-color: #006d77;
-}
+}*/
       
 }

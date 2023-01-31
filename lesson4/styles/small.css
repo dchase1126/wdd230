@@ -22,7 +22,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 0 20px 0 10px;
-  
 }
 
 .header-first_line a img {
@@ -30,25 +29,67 @@ header {
 }
 
 .header-first_line .header-title h1 {
-  font-size: 30px;
-
+  font-size: 50px;
 }
 
-.navigation {
+nav button {
+  margin: .2rem 2vw;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #006d77;
+  position: right;
+}
+
+nav {
+  background-color: beige;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2vw;
+  text-decoration: none;
+  color: #006d77;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #D6FDFF;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/*.navigation {
   content: "=";
   gap: 15px;
   list-style: none;
   position: absolute;
   right: 5px;
   text-align: center;
-  
 }
 
 .navigation li {
   content: "=";
   display: flex;
   background-color: beige;
-
 }
 
 .displayAll li {
@@ -62,9 +103,7 @@ header {
 
 #menu::before {
   content: "=";
-  display: block;
-  
- 
+  display: block; 
 }
 
 .navigation li a:hover {
@@ -73,9 +112,8 @@ header {
   width: 25%;
   height: 10px;
   padding: 5px 10px;
-   
 }
-
+*/
 .header-media_group {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +134,6 @@ header {
 }
 
 main {
-  
   margin: 20px auto;
   border: 10px solid #006d77;
   padding: 0.5rem;
