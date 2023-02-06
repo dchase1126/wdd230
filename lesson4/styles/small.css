@@ -99,44 +99,6 @@ nav ul.open {
   display: block;
 }
 
-/*.navigation {
-  content: "=";
-  gap: 15px;
-  list-style: none;
-  position: absolute;
-  right: 5px;
-  text-align: center;
-}
-
-.navigation li {
-  content: "=";
-  display: flex;
-  background-color: beige;
-}
-
-.displayAll li {
-  display: block;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-
-
-#menu::before {
-  content: "=";
-  display: block; 
-}
-
-.navigation li a:hover {
-  background-color: #D6FDFF;
-  border: 3px solid #006d77;
-  width: 25%;
-  height: 10px;
-  padding: 5px 10px;
-}
-*/
-
 .header-media_group {
   display: flex;
   gap: 5px;
@@ -155,7 +117,9 @@ nav ul.open {
 }
 
 main {
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
   margin: 20px auto;
   border: 10px solid #006d77;
   padding: 0.5rem;
@@ -164,26 +128,29 @@ main {
 }
 
 main > * {
-  
   background-color: white;
   margin: 5px;
-  height: 300px auto;
 }
 
 section img {
   margin: auto;
   width: 100%;
-  
 }
 
-section .banner img{
-  position: sticky;
+.hero_section{
+  position: relative;
+}
+
+p.banner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #d6fdff;
   border: 1px solid #006d77;
   opacity: 0.8;
-  }
+}
 
-/* beginning 
+/* beginning of kitten example
 h1 {
 	text-align: center;
 	font-size: 2.5rem;

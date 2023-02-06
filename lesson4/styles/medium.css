@@ -1,15 +1,4 @@
 @media only screen and (min-width: 560px) {
-  main section div {
-    justify-content: space-between;
-  }
-
-  main > * {
-    display:grid;
-    background-color: white;
-    margin: 5px;
-    height: 300px;
-  }
-
   .header-first_line {
     padding: 10px;
   }
@@ -37,15 +26,28 @@
     padding: 5px;
   }
 
-  section img {
-    margin: auto;
-    width: 100%;
-    height:min-content
+  main {
+    grid-template-columns: 1fr 1fr;
   }
+
+  .hero_section {
+    grid-column: 1/-1;
+  }
+
+  main section div {
+    justify-content: space-between;
+  }
+
+  main > * {
+    gap: 5px;
+    background-color: white;
+    margin: 5px;
+  }
+
   section .banner {
     background-color: #d6fdff;
     border: 2px solid #006d77;
-    }
+  }
   /*
 .column {
     display: grid;

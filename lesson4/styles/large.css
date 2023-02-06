@@ -1,59 +1,32 @@
 @media only screen and (min-width: 1080px) {
   nav ul li a {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 2rem;
-}
+  }
 
-  
-  /*
-  .navigation {
-    display: flex;
-    position: relative;
+  main{ 
+    grid-template-columns: 1fr 2fr 1fr;
     
   }
 
-  .navigation li {
-    display: block;
-    border: 3px solid #006d77;
-   /* background-color: beige;
-    width: 45%;
-    height: 40px;
-    }
-
-  .navigation li:first-child  {
-    display: none;
-
-  }
-
-  li a:hover {
-    background-color: #D6FDFF;
-    /*border: 3px solid #006d77;
-    width: 25%;
-    height: 40px;
-    padding: 5px 20px;
-    margin: auto;
-  }
-  */
-
-  main >*{
-    display:grid;
+  main > * {
+    gap: 5px;
     background-color: white;
     margin: 5px;
-    height: 300px;
-    
+  }
+
+  .hero_section{
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
 
   .banner {
     background-color: #d6fdff;
     border: 2px solid #006d77;
-    }
-  img {
-    margin: auto;
-    width: 100%;
-    height:min-content;
   }
 
 
+  /*
   .column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -78,5 +51,5 @@
     border-color: #006d77;
  
   }
-
+*/
 }
