@@ -4,6 +4,7 @@
   }
 
   main > * {
+    display:grid;
     background-color: white;
     margin: 5px;
     height: 300px;
@@ -35,6 +36,16 @@
     font-size: 1rem;
     padding: 5px;
   }
+
+  section img {
+    margin: auto;
+    width: 100%;
+    height:min-content
+  }
+  section .banner {
+    background-color: #d6fdff;
+    border: 2px solid #006d77;
+    }
   /*
 .column {
     display: grid;
