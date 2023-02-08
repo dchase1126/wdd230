@@ -141,7 +141,7 @@ section img {
   position: relative;
 }
 
-p.banner {
+p .banner {
   position: absolute;
   bottom: 0;
   width: 100%;
