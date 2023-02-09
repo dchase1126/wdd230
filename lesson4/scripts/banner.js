@@ -1,13 +1,15 @@
-let currentYear = new Date();
-let year = currentYear.getfullyear();
-document.getElementById('currentYear').innerHTML = year;
-let currentDay = new Date();
-let day = currentDay.getDay();
+//let currentYear = new Date();
+//currentYear = currentYear.getFullYear();
+//document.getElementById('currentYear').innerHTML = currentYear;
+let currentDay = new Date().getDay();
+
 //if the day is Monday or Tuesday
-if (day == 1 || day == 2) {
-    document.getElementById('banner').innerHTML =
-        ("Come join us for the chamber meet and greet Wednesday at 7:00 p.m.")
-}
+//ternary
+document.getElementById('banner').style.display = (currentDay == 1 || currentDay == 2) ? "block": "none";
+
+const is21 = true
+const isInUS = false
+is21 && isInUS && console.log('can')
 
 /*To change the display property in JavaScript, consider the use of .style.display = "block" in 
 a selection structure where the condition looks at the day of the week through

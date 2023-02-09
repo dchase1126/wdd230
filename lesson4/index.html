@@ -20,6 +20,7 @@
     <script src="scripts/displayMenu.js" defer></script>
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
 
 
     <title>Home</title>
@@ -67,32 +68,26 @@
     </header>
 
     <main>
+        <!--
+        
+    -->
         <section class="hero_section">
 
             <div>
                 <h2>Hero with site name and call to action</h2>
                 <div class="herodiv">
-                    <img src="images/wdd230-org.jpg" alt="Ariel view of Idaho Falls area">
+
+                    <picture>
+                        <source srcset="images/wdd230-org.jpg" media="(min-width: 1080px)">
+                        <source srcset="images/wdd230-org_medium.jpg" media="(min-width:560px)">
+                        <img src="images/wdd230-org.jpg" alt="Ariel view of Idaho Falls area">
+                    </picture>
                 </div>
+
             </div>
+
             <p id="banner">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
         </section>
-        
-
-
-       
-
-        <!-- <picture>
-                <img src="https://placekitten.com/800/300" alt="hero image">
-            </picture>
-            <section class="stats">
-                <h2>Meet Me Mew</h2>
-                <p>Name: <span id="name">Tasha</span></p>
-                <p>Gender: <span id="gender">Female</span></p>
-                <p>Age: <span id="age">2.5</span></p>
-                <p>Shots?: <span id="shots">Yes</span></p>
-            </section>
-        </div>-->
 
         <section>
             <div class="Events">Events
@@ -117,13 +112,17 @@
 
         <section>
 
-            <div class="Spotlight 1">Spotlight 1
+            <div class="Spotlight_1">DTC Lawn Care</div>
+            <div>
+                <img src="images/daniel.jpg" alt="Daniel Chase">
             </div>
         </section>
 
         <section>
 
-            <div class="Spotlight 2">Spotlight 2
+            <div class="Spotlight_2">SLPhotography</div>
+            <div>
+                <img src="images/opt_stephanie.jpg" alt="Stephanie Lindquist">
             </div>
         </section>
 
