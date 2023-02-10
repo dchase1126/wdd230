@@ -21,6 +21,7 @@
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 
 
     <title>Home</title>
@@ -40,9 +41,6 @@
             <nav>
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav">
-                    <!--<ul id="navigation">-->
-                    <!--<li class="active"><a href="#"></a></li>-->
-                    <!--<li><a id="menu" href="#"></a></li>-->
                     <li><a href="#">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
@@ -68,11 +66,8 @@
     </header>
 
     <main>
-        <!--
-        
-    -->
-        <section class="hero_section">
 
+        <section class="hero_section">
             <div>
                 <h2>Hero with site name and call to action</h2>
                 <div class="herodiv">
@@ -83,25 +78,36 @@
                         <img src="images/wdd230-org.jpg" alt="Ariel view of Idaho Falls area">
                     </picture>
                 </div>
-
             </div>
-
             <p id="banner">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
         </section>
 
         <section>
-            <div class="Events">Events
+            <div class="Events">Current Events
             </div>
         </section>
 
         <section>
             <div class="Weather">Weather
             </div>
+            <picture>
+                <source srcset="images/sun _cloud_weather-icon.png" media="(min-width: 1080px)">
+                <source srcset="images/sun _cloud_weather-icon.png" media="(min-width:560px)">
+                <img src="images/sun _cloud_weather-icon.png" alt="weather icon">
+            </picture>
+            <p><span id="temp"></span> degrees Celcius</p>
+            <p>Partly Cloudy</p>
+            <p id='wind_speed'>Wind Speed</p>
+            <p id='wind_chill'>Wind Chill</p>
         </section>
 
         <section>
-            <div class="Join">Join
+            <button id="joinBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="join"></ul>
+            <li><a href="#">Join Us</a></li>
+            <div class="Join">Join Us
             </div>
+            <p> Come See how we can help you grow your business.</p>
         </section>
 
         <section>
@@ -114,15 +120,26 @@
 
             <div class="Spotlight_1">DTC Lawn Care</div>
             <div>
-                <img src="images/daniel.jpg" alt="Daniel Chase">
+                <img src="images/DTC_Lawncarejpg.jpg" alt="Daniel Chase">
             </div>
+            <p></p>
         </section>
 
         <section>
 
             <div class="Spotlight_2">SLPhotography</div>
             <div>
-                <img src="images/opt_stephanie.jpg" alt="Stephanie Lindquist">
+                <img src="images/stephanie_flower_field.jpg" alt="Stephanie Lindquist">
+            </div>
+            <p></p>
+        </section>
+
+        <section>
+
+            <div class="Spotlight_3">Spotlight 3 ???</div>
+            <div>
+                <img src="" alt="Spotlight 3">
+
             </div>
         </section>
 
