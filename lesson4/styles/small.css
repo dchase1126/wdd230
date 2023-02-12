@@ -69,6 +69,10 @@ nav {
   display: block;
 }
 
+nav {
+  z-index: 1;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -76,10 +80,11 @@ nav ul {
 }
 
 nav ul li a {
+  background-color: white;
   display: block;
   padding: 0.8rem 2vw;
   text-decoration: none;
-  color: #006d77;
+  color: rgba(0, 0, 0, 0.9);
   border-top: 2px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -138,16 +143,29 @@ section img {
 }
 
 .hero_section {
+  z-index: 0;
   position: relative;
 }
 
-p .banner {
+#banner {
+  position: absolute;
+  top: 0;
+  padding: 30px 0;
+  width: 100%;
+  font-size: 25px;
+  background-color: #d6fdff;
+  border: 5px solid #006d77;
+  opacity: 0.8;
+}
+
+#hero_joinBtn {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  right: 0;
   background-color: #d6fdff;
-  border: 1px solid #006d77;
-  opacity: 0.8;
+  font-size: 25px;
+  padding: 10px 0;
+  border: 5px solid #006d77;
 }
 
 section .spotlight_1 img {

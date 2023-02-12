@@ -1,4 +1,48 @@
 
+const butt = document.querySelector("button");
+const input = document.querySelector("input");
+const list = document.getElementById("list");
+
+butt.addEventListener("click"), () => {
+    const li = document.createElement('li');
+
+    const div = document.createElement(div);
+
+
+    // put li and newButt inside div
+    // <div> <li> <button> li div
+
+    li.innerText = input.value
+    // newButt should have a new eventlistener - click - toggleclass to display none
+
+    list.appendChild(li) // indtead of li, you put div
+    input.value = ""
+}
+
+const newButt = document.createElement("newButt");/*delete button*/
+/*delete button*/
+newButt.addEventListener("click"), () => {
+    //classtoggle = display = "none"
+    list.appendChild(div) // instead of li, you put div
+    input.value = ""
+}
+
+/*from https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaLabel 
+let el = document.getElementById('close-button');
+console.log(el.ariaLabel); // "Close"
+el.ariaLabel = "Close dialog"
+console.log(el.ariaLabel); // "Close dialog"
+*/
+
+
+
+
+
+
+
+/*Code below is from Tutor!!
+
+
 /*const butt = document.querySelector("button");
 const input = document.querySelector("input");
 const list = document.getElementById("list");
@@ -52,39 +96,3 @@ function newElement() {
       }
     }
 } */
-
-
-const butt = document.querySelector("button");
-const input = document.querySelector("input");
-const list = document.getElementById("list");
-
-butt.addEventListener("click"), () => {
-    const li = document.createElement('li');
-
-    const div = document.createElement(div);
-
-
-    // put li and newButt inside div
-    // <div> <li> <button> li div
-
-    li.innerText = input.value
-    // newButt should have a new eventlistener - click - toggleclass to display none
-
-    list.appendChild(li) // indtead of li, you put div
-    input.value = ""
-}
-
-const newButt = document.createElement("newButt");/*delete button*/
-/*delete button*/
-newButt.addEventListener("click"), () => {
-    //classtoggle = display = "none"
-    list.appendChild(div) // indtead of li, you put div
-    input.value = ""
-}
-
-/*from https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaLabel 
-let el = document.getElementById('close-button');
-console.log(el.ariaLabel); // "Close"
-el.ariaLabel = "Close dialog"
-console.log(el.ariaLabel); // "Close dialog"
-*/
