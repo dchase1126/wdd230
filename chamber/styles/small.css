@@ -162,10 +162,10 @@ section img {
 
 #hero_joinBtn {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   background-color: #d6fdff;
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px 0;
   border: 5px solid #006d77;
 }
