@@ -1,21 +1,21 @@
 
-const butt = document.querySelector("button");
+const btn = document.querySelector("btn");
 const input = document.querySelector("input");
 const list = document.getElementById("list");
 
-butt.addEventListener("click", () => {
+btn.addEventListener("click", () => {
     const li = document.createElement('li');
 
     const div = document.createElement(div);
 
-    const newButt = document.createElement("newButt");/*delete button*/
+    const newBtn = document.createElement("newBtn");/*delete button*/
     /*delete button*/
-    newButt.addEventListener("click", () => {
+    newBtn.addEventListener("click", () => {
         //classtoggle = display = "none"
         list.appendChild(div) // instead of li, you put div
         input.value = ""
     });
-    // put li and newButt inside div
+    // put li and newBtn inside div
     // <div> <li> <button> li div
 
     li.innerHTML = input.value
