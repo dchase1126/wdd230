@@ -80,11 +80,11 @@ nav ul {
 }
 
 nav ul li a {
-  background-color: white;
+  background-color:rgb(1, 28, 30);
   display: block;
   padding: 0.8rem 2vw;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
+  color: white;
   border-top: 2px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -95,6 +95,7 @@ nav ul li.active a {
 
 nav ul li a:hover {
   background-color: #d6fdff;
+  color: black;
 }
 
 nav ul {
@@ -127,7 +128,7 @@ nav ul.open {
   width: 100%;
   font-size: 30px;
   background-color: #d6fdff;
-  border: 5px solid #006d77;
+  border: 5px solid rgb(1, 28, 30);
   opacity: 0.8;
 }
 
