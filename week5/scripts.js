@@ -1,32 +1,31 @@
 
-const btn = document.querySelector("btn");
+const btn = document.querySelector("button");
 const input = document.querySelector("input");
 const list = document.getElementById("list");
 
 btn.addEventListener("click", () => {
+  if (input.value != '') {
+
     const li = document.createElement('li');
 
-    const div = document.createElement(div);
-
-    const newBtn = document.createElement("newBtn");/*delete button*/
-    /*delete button*/
-    newBtn.addEventListener("click", () => {
-        //classtoggle = display = "none"
-        list.appendChild(div) // instead of li, you put div
-        input.value = ""
-    });
-    // put li and newBtn inside div
-    // <div> <li> <button> li div
-
+    const newBtn = document.createElement('button');/*delete button*/
     li.innerHTML = input.value
-    // newButt should have a new eventlistener - click - toggleclass to display none
 
-    list.appendChild(li) // indtead of li, you put div
+    newBtn.textContent = 'Remove ❌'
+
+    li.appendChild(newBtn)
+    list.appendChild(li)
     input.value = ""
 
+    newBtn.addEventListener("click", () => {
+      list.removeChild(li)
+
+    });
+
+    input.focus()
+
+  }
 });
-
-
 
 /*from https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaLabel 
 let el = document.getElementById('close-button');
