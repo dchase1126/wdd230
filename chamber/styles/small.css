@@ -144,13 +144,14 @@ main {
 }
 
 /*Discover Page */
-
-.gallery {
+body .gallery {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
-.gallery/*:hover*/ {  /*still working on the hover effect*/
+.gallery:/*hover*/{  /*still working on the hover effect*/
   background-color: rgb(1, 28, 30);
   box-shadow: 0 0 50px #006d77;
   width: 300px;

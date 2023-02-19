@@ -4,16 +4,14 @@
     font-size: 2rem;
   }
 
-  main {
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-
   /*Discover Page */
 
-.gallery {
-  display: flex;
-  gap: 5px;
-}
+  body .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 
 .gallery/*:hover*/ {  /*still working on the hover effect*/
   background-color: rgb(1, 28, 30);
@@ -28,6 +26,10 @@
 }
 /*end of discover page*/
 
+
+  main {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
 
   main > * {
     gap: 5px;
