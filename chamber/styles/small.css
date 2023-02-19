@@ -143,19 +143,14 @@ main {
   background-color: beige;
 }
 
-main > * {
-  background-color: white;
-  margin: 5px;
-}
 /*Discover Page */
 
 .gallery {
   display: flex;
-  flex-direction: column;
   gap: 5px;
 }
 
-.gallery:hover {
+.gallery/*:hover*/ {  /*still working on the hover effect*/
   background-color: rgb(1, 28, 30);
   box-shadow: 0 0 50px #006d77;
   width: 300px;
@@ -167,6 +162,12 @@ main > * {
   align-items: center;
 }
 /*end of discover page*/
+
+main > * {
+  background-color: white;
+  margin: 5px;
+}
+
 
 section img {
   margin: auto;
