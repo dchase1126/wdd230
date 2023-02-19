@@ -80,7 +80,7 @@ nav ul {
 }
 
 nav ul li a {
-  background-color:rgb(1, 28, 30);
+  background-color: rgb(1, 28, 30);
   display: block;
   padding: 0.8rem 2vw;
   text-decoration: none;
@@ -147,6 +147,26 @@ main > * {
   background-color: white;
   margin: 5px;
 }
+/*Discover Page */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gallery:hover {
+  background-color: rgb(1, 28, 30);
+  box-shadow: 0 0 50px #006d77;
+  width: 300px;
+  height: 200px;
+  border: 4px solid rgb(1, 28, 30);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+/*end of discover page*/
 
 section img {
   margin: auto;
@@ -157,8 +177,6 @@ section img {
   z-index: 0;
   position: relative;
 }
-
-
 
 #hero_joinBtn {
   position: absolute;

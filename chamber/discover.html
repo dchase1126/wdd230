@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/displayMenu.js" defer></script>
+    <script src="scripts/todaysdate.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+
+    <title>discover</title>
 </head>
+
 <body>
-    
+
+    <header>
+
+        <div class="header-first_line">
+            <a href="/lesson4"><img src="images/logo.webp" alt="logo"></a>
+            <div class="header-title">
+                <h1>Idaho Falls</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join the Chamber</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header-media_group">
+
+                <span><a href="https://www.facebook.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
+                            alt="facebook icon"></a></span>
+                <span><a href="https://www.instagram.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                            alt="instagram"></a></span>
+            </div>
+        </div>
+
+        <div id="currentDate"></div>
+
+    </header>
+
+    <div class="banner">
+        <p id="banner">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
+    </div>
+
+    <main>
+        <H1>Discover Gallery</H1>
+        <div>
+            <img class="gallery" data-src="https://picsum.photos/300/400" alt="placeholder">
+        </div>
+        <div>
+            <img class="gallery" data-src="images\Idaho-Falls-City-Council-opt.jpg/" alt="Idaho Falls City Council">
+            <p>The members of the Idaho Falls City Council </p>
+        </div>
+        <div>
+            <img class="gallery" data-src="images\IdahoMetroPopGrowthTable.webp"
+                alt="Idaho Falls Metro Population Growth Table">
+        </div>
+        <div>
+            <img class="gallery" data-src="images\2023-arial-idaho-falls-temple-620x390.jpg" alt="Idaho Falls Temple">
+        </div>
+        <div>
+            <img class="gallery" data-src="images\Museum-of-Idaho.jpg" alt="Museum of Idaho.">
+        </div>
+        <div>
+            <img class="gallery" data-src="images\yellowstone-bear-world-vector-map-opt.jpg"
+                alt="Yellowstone Bear World">
+        </div>
+        <div>
+            <img class="gallery" data-src="https://picsum.photos/300/400" alt="placeholder">
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="/lesson4"><img src="images/logo.webp" alt="logo"></a>
+        <P>IdahoFalls Chamber of Commerce</P>
+        <p>365 River Pkwy, Idaho Falls, ID 83402</p>
+        <p>http://www.idahofallschamber.com/</p>
+        <p>(208)523-1010</p>
+
+        <a href="https://business.idahofallschamber.com/map"> location map</a>
+
+
+        <section>
+            <p>
+                &copy;2023 <span id="currentyear"></span> | Diane Chase | Chamber of Commerce site | WDD 230 Project
+            </p>
+
+            <div id="lastModified"></div>
+
+        </section>
+    </footer>
+
+
 </body>
+
 </html>
