@@ -14,10 +14,11 @@
     <script src="scripts/displayMenu.js" defer></script>
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
-    <script src="scripts/banner.js" defer></script>
+    <!--<script src="scripts/banner.js" defer></script>-->
     <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 
-    <title>discover</title>
+    <title>discover page</title>
 </head>
 
 <body>
@@ -58,35 +59,43 @@
 
     </header>
 
-    <div class="banner">
+    <!--<div class="banner">
         <p id="banner">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
-    </div>
+    </div>-->
 
-    <main>
+    <main class="discover">
         <H1>Discover Gallery</H1>
+       
         <div>
-            <img class="gallery" data-src="https://picsum.photos/300/400" alt="placeholder">
-        </div>
-        <div>
-            <img class="gallery" data-src="images\Idaho-Falls-City-Council-opt.jpg/" alt="Idaho Falls City Council">
+            <img class="gallery" data-src="images\Idaho-Falls-City-Council.webp" alt="Idaho Falls City Council">
             <p>The members of the Idaho Falls City Council </p>
         </div>
         <div>
             <img class="gallery" data-src="images\IdahoMetroPopGrowthTable.webp"
                 alt="Idaho Falls Metro Population Growth Table">
+                <p>Population Growth of Idaho Falls</p>
         </div>
         <div>
             <img class="gallery" data-src="images\2023-arial-idaho-falls-temple-620x390.jpg" alt="Idaho Falls Temple">
+            <p>Arial photo of Idaho Falls Temple
+            </p>
         </div>
         <div>
             <img class="gallery" data-src="images\Museum-of-Idaho.jpg" alt="Museum of Idaho.">
+            <p>Museum of Idaho</p>
         </div>
         <div>
             <img class="gallery" data-src="images\yellowstone-bear-world-vector-map-opt.jpg"
                 alt="Yellowstone Bear World">
+                <p>Yellowstone Bear World</p>
         </div>
         <div>
             <img class="gallery" data-src="https://picsum.photos/300/400" alt="placeholder">
+            <p>Place Holder</p>
+        </div>
+        <div>
+            <img class="gallery" data-src="https://picsum.photos/300/400" alt="placeholder"> 
+            <p>Place Holder</p>
         </div>
 
     </main>
@@ -108,6 +117,8 @@
 
             <div id="lastModified"></div>
 
+            <p><span class="label">Last Visit: </span><span id="lastVisit"></span></p>
+           
         </section>
     </footer>
 
