@@ -21,6 +21,7 @@ html {
   
   td {
     text-align: center;
+    background-color: whitesmoke;
   }
   
   tr:nth-child(even) td {
