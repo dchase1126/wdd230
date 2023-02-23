@@ -2,40 +2,66 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="The Idaho Falls Chamber of Commerce where Entreprneurs and
+    businesses come together to network and expand their customer 
+    base and grow their business.">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Join Form Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet" />
+
+
+    <script src="scripts/displayMenu.js" defer></script>
+    <script src="scripts/todaysdate.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+   
+    
+
+    <title>Thank You Page</title>
 
   </head>
 
   <body>
-    <h1>Join Form</h1>
+    <h1><strong>Thank You</strong></h1>
     <p>
-     <strong>Start Your Chamber membership!</strong><br>
-      Let's make your dream a reality. 
+     
      
     </p>
-    <form action="/my-handling-form-page" method="post">
-      <ul>
-        <li>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
-        </li>
-        <li>
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" name="user_email">
-        </li>
-        <li>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-        <li class="button">
-          <button type="submit">Send your message</button>
-        </li>
-      </ul>
-    </form>
+
+    <footer>
+      <a href="/lesson4"><img src="images/logo.webp" alt="logo"></a>
+      <P>IdahoFalls Chamber of Commerce</P>
+      <p>365 River Pkwy, Idaho Falls, ID 83402</p>
+      <p>http://www.idahofallschamber.com/</p>
+      <p>(208)523-1010</p>
+
+      <a href="https://business.idahofallschamber.com/map"> location map</a>
+
+
+      <section>
+          <p>
+              &copy;2023 <span id="currentyear"></span> | Diane Chase | Chamber of Commerce site | WDD 230 Project
+          </p>
+
+          <div id="lastModified"></div>
+
+          <p><span class="label">Last Visit: </span><span id="lastVisit"></span></p>
+
+      </section>
+  </footer>
+    
     
   </body>
+
+
+
 </html>
