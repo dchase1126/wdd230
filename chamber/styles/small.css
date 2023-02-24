@@ -198,6 +198,14 @@ main.join {
   width: 90%;
   background-color: beige; 
 }
+
+main.join form ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
 /*End of Join Page */
 
 main > * {

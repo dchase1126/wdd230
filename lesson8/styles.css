@@ -36,6 +36,8 @@ html {
   }
   
   caption {
+    display: table-caption;
+    text-align: center;
     padding: 10px;
    
   }

@@ -37,6 +37,20 @@
  
 /*end of discover page*/
 
+/*Join page*/
+main.join form ul li{
+  
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main.join form ul {
+  max-width: 500px;
+}
+
+/*end of join page*/
+
+
 
   main.home {
     grid-template-columns: 1fr 1fr;
