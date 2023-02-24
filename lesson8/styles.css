@@ -26,10 +26,13 @@ html {
     background-color: whitesmoke;
    
   }
-  
+  tbody tr:nth-child(2) td {
+    background-color:lightgray;
+  }
+
   tr:nth-child(even) td {
     /*background-color: lightgreen;*/
-    background-color: rgb(245,245,245);
+    background-color: lightgray;
   }
   
   tr:nth-child(odd) td {
@@ -41,5 +44,5 @@ html {
     display: table-caption;
     text-align: center;
     padding: 10px;
-   
+    caption-side: bottom;
   }
