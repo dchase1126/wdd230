@@ -31,26 +31,21 @@
   .discover div img:hover {
     background-color: rgb(1, 28, 30);
     box-shadow: 0 0 50px #006d77;
-   
   }
 
- 
-/*end of discover page*/
+  /*end of discover page*/
 
-/*Join page*/
-main.join form ul li{
-  
-  flex-direction: row;
-  justify-content: space-between;
-}
+  /*Join page*/
+  main.join form #contactInfo ul li {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-main.join form ul {
-  max-width: 500px;
-}
+  main.join form #contactInfo ul {
+    max-width: 500px;
+  }
 
-/*end of join page*/
-
-
+  /*end of join page*/
 
   main.home {
     grid-template-columns: 1fr 1fr;

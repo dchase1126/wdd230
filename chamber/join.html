@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet">
 
 
     <script src="scripts/displayMenu.js" defer></script>
@@ -25,6 +25,7 @@
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/crntdaytime.js" defer></script>
 
     <title>Join Page</title>
 </head>
@@ -74,84 +75,103 @@
 
         <H1>Join the Idaho Falls Chamber of Commerce </H1>
 
-        <p>
-            <strong>Start Your Chamber membership!</strong><br>
+        <h2>
+            Start Your Chamber membership!
+            <br>
             Let's make your dreams a reality.
-        </p>
+        </h2>
 
         <form action="thankyou.html">
 
-            <ul>
+            <fieldset id="contactInfo">
+
+                <h3>
+                    <legend>Contact Information</legend>
+                </h3>
+                <ul>
+
+                    <li>
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </li>
+
+                    <li>
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </li>
+
+                    <li>
+                        <label for="title">Business Title*</label>
+                        <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                    </li>
+
+                    <li>
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                    </li>
+
+                    <li>
+                        <label for="tel">Cell Phone*</label>
+                        <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
+                    </li>
+
+                    <li>
+                        <label for="businessName">Business Name*</label>
+                        <input type="text" id="businessName" name="businessName" required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="membership">
+                <h3>
+                    <legend>Membership Level</legend>
+                </h3>
+                <div>Please choose your membership</div>
+                <ul>
+                    <li>
+
+                        <label for="NPMembership" class="sbs"><input type="radio" name="radio" id="NPMembership"
+                                value="NP Membership is for non profit organizations and there is no fee." />NP
+                            Membership is for non profit organizations and there is
+                            no fee.</label>
+                    </li>
+                    <li>
+                        <label class="sbs">
+                            <input type="radio" name="radio" value="Bronze Membership." />
+                            Bronze Membership.
+                        </label>
+                    </li>
+                    <li>
+                        <label class="sbs">
+                            <input type="radio" name="radio" value="Silver Membership" />
+                            Silver Membership
+                        </label>
+                    </li>
+                    <li>
+                        <label class="sbs"><input type="radio" name="radio" value="Gold Membership" /> Gold
+                            Membership</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <h3>
+                    <legend>About your Business</legend>
+                </h3>
+                <ul>
+                    <li>
+                        <label for="descriptionTextarea">Business Description*</label>
+                        <textarea id="descriptionTextarea" name="descriptionTextarea"
+                            placeholder="Please briefly describe your business" required></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <input type="hidden" id="crntdaytime">
+
+            <button type="submit" class="submitBtn"> Create Chamber Account </button>
 
 
-                <li>
-                    <label for="firstName">First Name*:</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </li>
-
-                <li>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </li>
-
-
-                <li>
-                    <label for="title">Business Title:</label>
-                    <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
-                    <!--ADD Pattern-->
-                </li>
-
-
-                <li>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="user@email.com" required>
-                </li>
-
-
-                <li>
-                    <label for="tel">Cell Phone:</label>
-                    <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
-                </li>
-
-
-                <li>
-                    <label for="businessName">Business Name:</label>
-                    <input type="text" id="businessName" name="businessName" required>
-                </li>
-                <p>
-                    ** TO DO <br>
-                    A membership level selection using an appropriate form field of your choosing to allow the user to
-                    select a membership level.
-                    There are four membership levels.
-                    Membership level benefits should be displayed to the side of the form in larger views.
-                    NP Membership is for non profit organizations and there is no fee.
-                    Bronze Membership.
-                    Silver Membership
-                    Gold Membership
-                    This memberships have increasing costs as well as increased benefits per level like trainings,
-                    advertising (like on the home page spotlights), event discounts, etc.
-                </p>
-                <li>
-                    <label for="descriptionTextarea">* Business Description:</label>
-                    <textarea id="descriptionTextarea" name="descriptionTextarea" required></textarea>
-                </li>
-                <p>
-                    ** TO DO <br>
-                    A hidden field that contains the current date and time that the form was loaded by the user.
-                </p>
-                <li class="SubmitBtn">
-                    <button type="submit">Enter your information</button>
-                </li>
-
-            </ul>
-
-            <label for="cars">Choose a car:</label>
-            <select id="cars" name="cars">  
-                <option value="volvo">Volvo</option>  
-                <option value="saab">Saab</option>  
-                <option value="fiat">Fiat</option>  
-                <option value="audi">Audi</option>
-            </select>
         </form>
     </main>
 
@@ -166,6 +186,7 @@
 
 
         <section>
+
             <p>
                 &copy;2023 <span id="currentyear"></span> | Diane Chase | Chamber of Commerce site | WDD 230 Project
             </p>

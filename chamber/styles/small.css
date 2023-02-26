@@ -25,7 +25,7 @@ header {
 }
 
 .header-first_line a img {
-  width: 100px; 
+  width: 100px;
 }
 
 .header-first_line .header-title h1 {
@@ -140,7 +140,7 @@ main.home {
   border: 10px solid #006d77;
   padding: 0.5rem;
   width: 90%;
-  background-color: beige; 
+  background-color: beige;
 }
 
 /*Discover Page */
@@ -154,9 +154,9 @@ main.discover {
   border: 10px solid #006d77;
   padding: 0.5rem;
   width: 90%;
-  background-color: beige; 
+  background-color: beige;
 }
- 
+
 .gallery {
   width: 300px;
   height: 200px;
@@ -165,27 +165,31 @@ main.discover {
 }
 
 p {
-	margin: 1rem;
+  margin: 1rem;
 }
 
 .label {
-	font-family: sansita, cookie, cursive;
-	font-weight: 100;
+  font-family: sansita, cookie, cursive;
+  font-weight: 100;
 }
 
-#visits .discover{
-	color: rgb(1, 28, 30);
-	font-weight: bold;
-	font-size: 30px;
+#visits .discover {
+  color: rgb(1, 28, 30);
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .today {
-	color: rgb(1, 28, 30);
+  color: rgb(1, 28, 30);
 }
 
 /*end of discover page*/
 
 /*Join Page */
+main.join li {
+  list-style: none;
+}
+
 main.join {
   display: flex;
   flex-direction: column;
@@ -195,18 +199,55 @@ main.join {
   margin: 20px auto;
   border: 10px solid #006d77;
   padding: 0.5rem;
-  width: 90%;
-  background-color: beige; 
+  width: 100%;
+  background-color: beige;
 }
 
-main.join form ul li{
+main.join form #contactInfo ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5px;
+  gap: 10px 
+}
+
+main.join form #membership ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  gap: 10px 
+}
+
+.join .submitBtn {
+  position: center;
+  top: 0;
+  right: 0;
+  background-color: #d6fdff;
+  font-size: 15px;
+  padding: 10px 0;
+  border: 3px solid #006d77;
+
 }
 
 /*End of Join Page */
+
+/*Thank You Page*/
+main.thankYou {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: 10px solid #006d77;
+  padding: 0.5rem;
+  width: 90%;
+  background-color: beige;
+  font-size: 25px;
+ 
+}
+/* end of Thank You page*/
 
 main > * {
   background-color: white;
@@ -232,7 +273,6 @@ section #hero_joinBtn {
   padding: 10px 0;
   border: 5px solid #006d77;
 }
-
 
 section .spotlight_1 img {
   width: 20px;
