@@ -260,6 +260,7 @@ section img {
 }
 
 .hero_section {
+ 
   z-index: 0;
   position: relative;
 }
@@ -272,6 +273,12 @@ section #hero_joinBtn {
   font-size: 15px;
   padding: 10px 0;
   border: 5px solid #006d77;
+  text-decoration: none;
+  font-family: cursive, sansita, cookie;
+  color: rgb(1, 28, 30);
+  width: 140px;
+  float: right;
+  text-align:center; 
 }
 
 section .spotlight_1 img {
