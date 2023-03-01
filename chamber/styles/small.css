@@ -125,7 +125,7 @@ nav ul.open {
 #banner {
   display: none;
   padding: 5px 0;
-  width: 100%;
+  width: 90%;
   font-size: 30px;
   background-color: #d6fdff;
   border: 5px solid rgb(1, 28, 30);
@@ -230,6 +230,10 @@ main.join form #membership ul li {
 
 }
 
+input[type="radio"] {
+  margin-right: 10px;
+}
+
 /*End of Join Page */
 
 /*Thank You Page*/
@@ -260,7 +264,6 @@ section img {
 }
 
 .hero_section {
- 
   z-index: 0;
   position: relative;
 }
@@ -281,7 +284,16 @@ section #hero_joinBtn {
   text-align:center; 
 }
 
+#hero_joinBtn:hover{
+  color: red;
+}
+
 section .spotlight_1 img {
+  width: 20px;
+  
+}
+
+section .spotlight_2 img {
   width: 20px;
 }
 
