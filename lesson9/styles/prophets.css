@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-@media only screen and (min-width: 560px) {
-  
-  }
-
-@media only screen and (min-width: 1080px) {
-   
-    }
 
 body {
   font-size: 16px;
@@ -22,24 +15,21 @@ footer {
 
 h1 {
   color:brown;
+  /*box-shadow: 0 0 30px rosybrown;*/
   /*border-bottom: 1px solid #eee;*/
-  /*text-shadow: 0 0 15px #777;*/
-  width: 60%;
+  /*text-shadow: 0 0 15px rosybrown;*/
+  width: 100%;
+  font-size: 80px;
+  text-align: center;
+  
+  
 }
 
 h2 {
   color: brown;
-  margin: 0 0 1rem 0;
-	/*border-bottom: 1px solid #bbb;*/
-}
-
-h3 {
-  margin: 0;
-}
-
-h4 {
-  color: #333;
-  margin: 7px 0 5px 0;
+  margin: 16px;
+  align-items: center;
+/*border-bottom: 1px solid #bbb;*/
 }
 
 p {
@@ -53,10 +43,14 @@ main {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
 }
-.card{
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+}
 
-}
 section {
   margin: 0.25rem;
   padding: 0.35rem;
@@ -68,8 +62,9 @@ section {
 }
 
 section > p {
- 
-  min-height: 40px;
+  padding: 8px;
+  align-items: center;
+  color: brown;
 }
 
 img {
@@ -85,53 +80,8 @@ li > img {
   height: 30px;
 }
 
-
-/*
 footer {
-  border-top: 1px solid #555;
+  border-top: 1px solid black;
   padding: 20px;
+  text-align: center;
 }
-
-.caption {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  border: 1px solid #ccc;
-  background-color: lightyellow;
-  padding: 0.25rem;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1rem 1fr;
-}
-
-.caption h6 {
-  position: absolute;
-  top: -2.3rem;
-  left: -0.25rem;
-}
-
-.caption > div {
-  width: 0.75rem;
-  height: 0.75rem;
-  border: 1px solid #bbb;
-}
-
-.caption > p {
-  font-size: 0.75rem;
-}
-
-.most {
-  background-color: #bed;
-}
-
-.fav {
-  background-color: skyblue;
-}
-
-.own {
-  background-color: rosybrown;
-}
-
-.un {
-	list-style: none;
-}*/
