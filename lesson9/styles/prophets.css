@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-
 body {
   font-size: 16px;
   font-family: Times New Roman, Helvetica, sans-serif;
@@ -14,10 +13,10 @@ footer {
 }
 
 h1 {
-  color:brown;
+  color: brown;
   width: 100%;
   font-size: 70px;
-  text-align: center; 
+  text-align: center;
 }
 
 h2 {
@@ -25,7 +24,6 @@ h2 {
   margin: 10px;
   padding: 5px;
   align-items: center;
-
 }
 
 main {
@@ -34,11 +32,11 @@ main {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-.cards{
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 section {
@@ -48,7 +46,7 @@ section {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 section > p {
@@ -58,7 +56,7 @@ section > p {
 
 img {
   width: auto;
-	max-width: 325px;
+  max-width: 325px;
   box-shadow: 0 0 30px rosybrown;
   height: 200px;
   border: 1px solid black;
