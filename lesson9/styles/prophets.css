@@ -3,7 +3,7 @@
 
 body {
   font-size: 16px;
-  font-family:  Times New Roman, Helvetica, sans-serif;
+  font-family: Times New Roman, Helvetica, sans-serif;
 }
 
 header,
@@ -15,25 +15,17 @@ footer {
 
 h1 {
   color:brown;
-  /*box-shadow: 0 0 30px rosybrown;*/
-  /*border-bottom: 1px solid #eee;*/
-  /*text-shadow: 0 0 15px rosybrown;*/
   width: 100%;
-  font-size: 80px;
-  text-align: center;
-  
-  
+  font-size: 70px;
+  text-align: center; 
 }
 
 h2 {
   color: brown;
-  margin: 16px;
+  margin: 10px;
+  padding: 5px;
   align-items: center;
-/*border-bottom: 1px solid #bbb;*/
-}
 
-p {
-  margin: 0;
 }
 
 main {
@@ -42,27 +34,24 @@ main {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  
 }
 .cards{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
 }
 
 section {
-  margin: 0.25rem;
-  padding: 0.35rem;
+  margin: 15px;
+  padding: 5px;
   background-color: lightyellow;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
 }
 
 section > p {
-  padding: 8px;
   align-items: center;
   color: brown;
 }
