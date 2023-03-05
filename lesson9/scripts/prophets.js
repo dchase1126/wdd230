@@ -32,13 +32,11 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
         
-        
         // Append the section(card) with the created elements
         card.appendChild(h2);
         card.appendChild(portrait);
         card.appendChild(birthDate);
         card.appendChild(birthPlace);
-
 
         cards.appendChild(card);
     }); // end of forEach loop
