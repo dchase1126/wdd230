@@ -1,0 +1,85 @@
+{
+    "companies": [
+      {
+        "Business": "Browning Honey,Co",
+        "address": "9019 N 5 E Idaho Falls, Idaho 83401",
+        "phone": "(208)523-3692",
+        "webPg": "https://www.browningshoney.com/",
+        "membership": "Gold",
+        "imageurl": "images/brownings-honey.logo-oval-white.webp"
+      },
+      {
+        "Business": "Stephanie Lindquist Photography",
+        "address": "417 South 100 West Idaho Falls, Idaho 83401",
+        "phone": "(208)524-3570",
+        "webPg": "https://stephanielindquist.wixsite.com/mysite/engagements",
+        "membership": "Silver",
+        "imageurl": "images/stephanie_flower_field.jpg"
+      },
+      {
+        "Business": "DTC Lawncare",
+        "address": "141 South 400 West Idaho Falls, Idaho 83401",
+        "phone": "(208)524-2420",
+        "webPg": "https://www.facebook.com/profile.php?id=100084797953034",
+        "membership": "bronze",
+        "imageurl": "images/DTC_Lawncarejpg.webp"
+      },
+      {
+        "Business": "Wood Funeral Home",
+        "address": "273 N Ridge Ave, Idaho Falls, ID 83402",
+        "phone": "(208) 522-2751",
+        "webPg": "https://www.woodfuneralhome.com/",
+        "membership": "Gold",
+        "imageurl": "images/Wood-Funeral-Home-wdd-logo-ks.png"
+      },
+      {
+        "Business": "Lincoln Court",
+        "address": "850 Lincoln Drive Idaho Falls, ID 83401",
+        "phone": "Phone: (208) 529-3456",
+        "webPg": "https://stellarliving.com/communities/lincoln-court-assisted-senior-living/",
+        "membership": "Silver",
+        "imageurl": "images/Lincoln-court-retirement.jpg.webp"
+      },
+      {
+        "Business": "Mountain America Center",
+        "address": "1690 Event Center Drive Idaho Falls, Idaho 83402",
+        "phone": "(986) 497-0509",
+        "webPg": "https://mountainamericacenter.com/",
+        "membership": "Gold",
+        "imageurl": "images/MAC-Logo_Full-Color-300x108.png.webp"
+      },
+      {
+        "Business": "Eagle Rock Indian Motorcycle",
+        "address": "845 MILLIGAN RD. IDAHO FALLS, ID 83402",
+        "phone": "(208) 525-1901",
+        "webPg": "https://eaglerockindianmotorcycle.com/",
+        "membership": "bronze",
+        "imageurl": "images/Eagle-Rock- Motorcycle-DealerLogo3.png"
+      },
+      {
+        "Business": "American Family Insurance",
+        "address": "2587 N HOLMES AVE STE B IDAHO FALLS, ID 83401-1546",
+        "phone": " (208) 552-9914",
+        "webPg": "https://www.amfam.com/agents/idaho/idaho-falls/brenden-craft",
+        "membership": "Silver",
+        "imageurl": "images/amfam-rgb.png"
+      },
+      {
+        "Business": "Action Motor Sports",
+        "address": "1355 East Lincoln Road Idaho Falls, ID 83401",
+        "phone": "(208) 522-3050",
+        "webPg": "https://www.actionmotor.com/",
+        "membership": "Silver",
+        "imageurl": "images/actionmotor-logo.png"
+      },
+      {
+        "Business": "Bear World",
+        "address": "6010 S 4300 W, Rexburg, ID 83440",
+        "phone": "(208) 359-9688",
+        "webPg": "https://yellowstonebearworld.com/",
+        "membership": "bronze",
+        "imageurl": "images/bear-world-logo.png"
+      }
+      
+    ]
+  }

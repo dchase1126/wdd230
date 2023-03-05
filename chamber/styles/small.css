@@ -32,6 +32,10 @@ header {
   font-size: 30px;
 }
 
+.header-title p {
+  margin: 0;
+}
+
 nav {
   background-color: beige;
   position: absolute;
@@ -40,13 +44,6 @@ nav {
   text-align: right;
   opacity: 0.8;
 }
-
-/* nav button {
-  margin: 0.2rem 2vw;
-  font-size: 2rem;
-  color: #006d77;
-  position: right;
-} */
 
 #hamburgerBtn {
   width: 30px;
@@ -165,7 +162,7 @@ main.discover {
 }
 
 p {
-  margin: 1rem;
+  margin: 5px;
 }
 
 .label {
@@ -208,7 +205,7 @@ main.join form #contactInfo ul li {
   flex-direction: column;
   align-items: center;
   margin: 5px;
-  gap: 10px 
+  gap: 10px;
 }
 
 main.join form #membership ul li {
@@ -216,7 +213,7 @@ main.join form #membership ul li {
   flex-direction: column;
   justify-content: center;
   margin: 15px;
-  gap: 10px 
+  gap: 10px;
 }
 
 .join .submitBtn {
@@ -227,7 +224,6 @@ main.join form #membership ul li {
   font-size: 15px;
   padding: 10px 0;
   border: 3px solid #006d77;
-
 }
 
 input[type="radio"] {
@@ -249,9 +245,91 @@ main.thankYou {
   width: 90%;
   background-color: beige;
   font-size: 25px;
- 
 }
 /* end of Thank You page*/
+
+
+/*Directory Page*/
+
+
+.directory main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: 10px solid #006d77;
+  width: 90%;
+}
+
+.gridLayout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listLayout {
+  display: block;
+}
+
+ #cards > * {
+  max-width: 90%;
+}
+
+.directory h1 {
+  color: rgb(1, 28, 30);
+  width: 100%;
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  background-color: beige;
+  border: 3px solid #006d77;
+}
+
+.directory h2 {
+  color: rgb(1, 28, 30);
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.directory section #cards section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 25px;
+  width: 90%;
+  background-color: beige;
+  border: 3px solid #006d77;
+  
+}
+
+.directory section > p {
+  align-items: center;
+  color: rgb(1, 28, 30);
+}
+
+.directory img {
+  width: auto;
+  max-width: 100%;
+  height: 200px;
+  border: 1px solid #006d77;
+}
+
+.directory li > img {
+  width: auto;
+  height: 30px;
+}
+
+/*End of Directory Page*/
 
 main > * {
   background-color: white;
@@ -281,16 +359,15 @@ section #hero_joinBtn {
   color: rgb(1, 28, 30);
   width: 140px;
   float: right;
-  text-align:center; 
+  text-align: center;
 }
 
-#hero_joinBtn:hover{
+#hero_joinBtn:hover {
   color: red;
 }
 
 section .spotlight_1 img {
   width: 20px;
-  
 }
 
 section .spotlight_2 img {

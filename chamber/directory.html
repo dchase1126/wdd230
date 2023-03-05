@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Idaho Falls Chamber of Commerce where Entreprneurs and
-    businesses come together to network and expand their customer 
-    base and grow their business.">
+                                    businesses come together to network and expand their customer 
+                                    base and grow their business.">
 
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +24,16 @@
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/business.js" defer></script>
 
 
 
-    <title>Thank You Page</title>
+    <title>Directory-Idaho Falls Chamber of Commerce</title>
 
 </head>
 
 <body>
+
     <header>
 
         <div class="header-first_line">
@@ -50,7 +51,6 @@
                     <li><a href="directory.html" target="_blank">Directory</a></li>
                     <li><a href="join.html" target="_blank">Join</a></li>
                     <li><a href="#">Contact</a></li>
-
                 </ul>
             </nav>
 
@@ -69,16 +69,27 @@
         <div id="currentDate"></div>
 
     </header>
+
     <div class="banner">
         <p id="banner">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
     </div>
+    <main class="directory">
 
-    <main class="thankYou">
 
-        <h1><strong>Congratulations! </strong></h1>
-        <p>
-            You are now a member of the Idaho Falls Chamber of Commerce.
-        </p>
+        <section>
+            <h1>Business Spotlight Directory</h1>
+        </section>
+
+        <div class="menu">
+            <button id="gridBtn">⏹️Grid</button>
+            <button id="listBtn">📄List</button>
+        </div>
+
+        
+            <section>
+                <div id="cards"></div>
+            </section>
+        
 
     </main>
 
@@ -99,14 +110,9 @@
 
             <div id="lastModified"></div>
 
-            <p><span class="label">Last Visit: </span><span id="lastVisit"></span></p>
-
         </section>
     </footer>
 
-
 </body>
-
-
 
 </html>
