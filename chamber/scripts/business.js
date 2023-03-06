@@ -19,14 +19,15 @@ getBusinessData();
         let phone = document.createElement('p');
         let address = document.createElement('p');
         let portrait = document.createElement('img');
-        let webPg = document.createElement('p');
+        let webPg = document.createElement('a');
         let membership = document.createElement('p');
 
         // Build the h2 content out to show the company's full name - finish the template string
         h2.textContent = `${company.Business} `;
         address.textContent = `Address: ${company.address}`;
         phone.textContent = `Phone: ${company.phone}`;
-        webPg.textContent = `Web Page: ${company.webPg}`;
+        webPg.textContent = `Web Page`;
+        webPg.href = `${company.webPg}`;
         membership.textContent = `membership: ${company.membership}`;
 
         // Build the image portrait by setting all the relevant attribute
