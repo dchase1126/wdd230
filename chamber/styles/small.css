@@ -211,6 +211,7 @@ main.join form #contactInfo ul li {
   align-items: center;
   margin: 5px;
   gap: 10px;
+  padding: 10px;
 }
 
 main.join form #membership ul li {
@@ -221,8 +222,13 @@ main.join form #membership ul li {
   gap: 10px;
 }
 
+main.join form #business ul li label{
+  padding: 10px;
+  
+}
+
+
 .join .submitBtn {
-  position: center;
   top: 0;
   right: 0;
   background-color: #d6fdff;
@@ -233,6 +239,15 @@ main.join form #membership ul li {
 
 input[type="radio"] {
   margin-right: 10px;
+}
+
+.join legend{
+  font-size: 25px;
+  padding: 10px; 
+}
+
+.join p {
+  padding: 10px; 
 }
 
 /*End of Join Page */
@@ -280,7 +295,7 @@ main.thankYou {
   /* max-width: 90%; */
 }
 
-.directory h1 {
+.directory h2 {
   color: rgb(1, 28, 30);
   width: 100%;
   padding: 15px;
@@ -297,7 +312,7 @@ main.thankYou {
   align-items: center;
 }
 
-.directory section #cards section {
+.directory  #cards section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,7 +358,7 @@ section img {
   position: relative;
 }
 
-section #hero_joinBtn {
+section .hero_joinBtn {
   position: relative;
   top: 0;
   right: 0;
@@ -359,7 +374,7 @@ section #hero_joinBtn {
   text-align: center;
 }
 
-#hero_joinBtn:hover {
+.hero_joinBtn:hover {
   color: red;
 }
 
