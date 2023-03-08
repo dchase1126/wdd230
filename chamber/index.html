@@ -24,8 +24,8 @@
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
-
+    <!--<script src="scripts/windchill.js" defer></script>-->
+    <script src="scripts/weatherapi.js" defer></script>
 
     <title>Home-Idaho Falls Chamber of Commerce</title>
 
@@ -112,14 +112,26 @@
         </section>
 
         <section>
-            <div class="Weather">Weather
+            <div class="Weather"><strong>Idaho Falls Weather</strong>
             </div>
             <br>
+            <!-- Code from ealier lessons
             <img src="images/sun_cloud_weather-icon.webp" alt="weather">
             <p><span id="temp"></span> degrees Celcius</p>
             <p>Partly Cloudy</p>
             <p><span>Wind Speed </span><span id='wind_speed'></span></p>
-            <p><span>wind Chill </span><span id='wind_chill'></span></p>
+            <p><span>wind Chill </span><span id='wind_chill'></span></p>  -->
+            <h1>OpenWeatherMap.org API Test</h1>
+            <p>Current Temperature <span id="current-temp"></span> &deg;F</p>
+            <br>
+            <h2></h2>
+            <figure>
+                <p><strong>Current Condition</strong>
+                    <figcaption></figcaption>
+                </p>
+                <img src="" alt="" id="weather-icon" />
+            </figure>
+            <p>Windchill is <span id="wind-chill"></span></p>
 
         </section>
 
@@ -215,7 +227,8 @@
         <p>http://www.idahofallschamber.com/</p>
         <p>(208)523-1010</p>
 
-        <a href="https://business.idahofallschamber.com/map"> location map</a>
+        <a href="https://business.idahofallschamber.com/map"> location map</a> <br>
+        <a href="https://openweathermap.org"> open weather map </a>
 
 
         <section>
