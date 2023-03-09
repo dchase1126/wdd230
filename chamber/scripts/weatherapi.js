@@ -32,7 +32,7 @@ function displayResults(weatherData) {
   const speed = weatherData.wind.speed
 
   if (temp <= 50 && speed > 3) {
-    windChill.textContent = `${parseInt(getwindchill(temp, speed))}°F`
+    windChill.textContent = `${parseInt(getwindchill(temp, speed))} °F`
     //const windchill = 35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t * (s ** .016));
     //document.getElementById("wind_chill").innerText = windchill.toFixed(0)
   }
