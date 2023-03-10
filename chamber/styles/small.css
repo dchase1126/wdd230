@@ -421,7 +421,7 @@ section #weather-icon {
   border-style: solid;
 }
 
-.home section.news{
+.home section.news {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -430,6 +430,10 @@ section #weather-icon {
   padding: 15px;
   color: rgb(1, 28, 30);
   border-style: solid;
+}
+
+.home section.news p{
+  padding: 5px; 
 }
 
 .home section.spot1 {
@@ -456,7 +460,6 @@ section #weather-icon {
   padding: 15px;
   color: rgb(1, 28, 30);
   border-style: solid; 
-  
 }
 
 .home section.spot2 img {
@@ -472,7 +475,6 @@ section #weather-icon {
   padding: 15px;
   color: rgb(1, 28, 30);
   border-style: solid; 
-
 }
 
 .home section.spot3 img {
@@ -483,6 +485,7 @@ footer {
   background-color: #83c5be;
   color: black;
   text-align: center;
+  
   padding: 20px 0;
 }
 
