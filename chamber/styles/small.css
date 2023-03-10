@@ -349,19 +349,27 @@ section img {
   width: 100%;
 }
 
-.hero_section {
+.home .hero_section {
   z-index: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid;
 }
 
 section .hero_joinBtn {
   position: relative;
   top: 0;
   right: 0;
-  background-color: #d6fdff;
+  background-color:#d6fdff;
   font-size: 15px;
   padding: 10px 0;
-  border: 5px solid #006d77;
+  border: 3px solid #006d77;
   text-decoration: none;
   font-family: cursive, sansita, cookie;
   color: rgb(1, 28, 30);
@@ -371,19 +379,104 @@ section .hero_joinBtn {
 }
 
 .hero_joinBtn:hover {
-  color: red;
+  background-color: rgb(1, 28, 30);
+  color:  white;
 }
 
-section .spotlight_1 img {
-  width: 20px;
+.home section.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid;
 }
 
-section .spotlight_2 img {
-  width: 20px;
+.home section.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 35px;
+  background-color:#d6fdff;
+  color: rgb(1, 28, 30);
+  border-style: solid;
 }
 
-section .spotlight_2 img {
-  width: 20px;
+section #weather-icon {
+  text-align: center;
+  width: 70px;
+}
+
+.home section.chamber{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid;
+}
+
+.home section.news{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid;
+}
+
+.home section.spot1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid;
+}
+
+.home section.spot1 img {
+  width: 100%;
+}
+
+.home section.spot2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid; 
+  
+}
+
+.home section.spot2 img {
+  width: 100%;
+}
+
+.home section.spot3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid; 
+
+}
+
+.home section.spot3 img {
+  width: 100%;
 }
 
 footer {

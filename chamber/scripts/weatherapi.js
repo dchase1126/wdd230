@@ -6,6 +6,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const windChill = document.getElementById('wind-chill');
+const windSpeed = document.getElementById('wind_speed');
 
 
 
@@ -32,7 +33,7 @@ function displayResults(weatherData) {
   const speed = weatherData.wind.speed
 
   if (temp <= 50 && speed > 3) {
-    windChill.textContent = `${parseInt(getwindchill(temp, speed))} °F`
+    windChill.innerHTML = `${parseInt(getwindchill(temp, speed))} °F`
     //const windchill = 35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t * (s ** .016));
     //document.getElementById("wind_chill").innerText = windchill.toFixed(0)
   }
@@ -41,8 +42,8 @@ function displayResults(weatherData) {
     //document.getElementById("wind_chill").innerText = "N/A"
   }
 
-
-  currentTemp.innerHTML = `<strong>${temp.toFixed(0)}</strong>`;
+  currentTemp.innerHTML = temp.toFixed(0);
+  windSpeed.innerHTML = speed.toFixed(0);
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
