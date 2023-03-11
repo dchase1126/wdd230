@@ -81,15 +81,10 @@
 
         <section class="hero_section">
             <div>
-                <h2>Hero with site name and call to action</h2>
+                <h2>Welcome to the Idaho Falls Chamber of Commerce</h2>
                 <br>
                 <div class="herodiv">
-                    <picture>
-                        <source srcset="images/Idaho_Falls.webp" media="(min-width: 1080px)">
-                        <source srcset="images/Idaho_Falls.webp" media="(min-width:560px)">
-                        <img src="images/Idaho_Falls.webp" alt="Ariel view of Idaho Falls area">
-                    </picture>
-
+                    <picture><img src="images/welcome.webp" alt="Welcome to Idaho Falls rock "></picture>
                 </div>
                 <p>The Greater Idaho Falls Chamber of Commerce is a member driven,
                     non-profit organization that serves as the voice of the business community.
@@ -97,11 +92,12 @@
                     by being the leader in economic,community and business development.
                     Come See how we can help you grow your business.</p>
             </div>
-
-            <a class="hero_joinBtn" href="chamber/join.html">Join the Chamber</a>
-
-
-          <!-- <img src="images/idaho_falls_map(1).webp" alt="Ariel view of Idaho Falls area">-->
+            <picture>
+                <source srcset="images/Idaho_Falls.webp" media="(min-width: 1080px)">
+                <source srcset="images/Idaho_Falls.webp" media="(min-width:560px)">
+                <img src="images/Idaho_Falls.webp" alt="Ariel view of Idaho Falls area">
+            </picture>
+            <a class="hero_joinBtn" href="/chamber/join.html">Join the Chamber</a>
         </section>
 
         <section class="events">
@@ -118,7 +114,6 @@
 
         <section class="news">
             <h2>News Release</h2>
-
             <div class="News Release"></div>
             <div>
                 <br>
@@ -128,48 +123,37 @@
             <p>* IDAHO FALLS, Idaho (KIFI) - We have a school closure for you this morning.</p>
 
             <p>* Eastern Idaho highways closed due to drifting snow, severe weather conditions</p>
-
         </section>
 
         <section class="chamber">
-            <h2>Join the Chamber</h2>
-            <!--<button id="joinBtn"></button>
-            <ul id="join"></ul>-->
-            <p>Come See how we can help you grow your business.</p>
-            <div class="Join"></div>
-
-            <img src="images/wdd230-org_small.jpg" alt="join the Chamber Meeting">
-            
-
+            <h2>Come See how we can help you grow your business.</h2><br>
             <a class="hero_joinBtn" href="/chamber/join.html">Join the Chamber</a>
+         
+            <div class="Join"></div>
+            <img src="images/wdd230-org_small.jpg" alt="join the Chamber Meeting">
         </section>
 
-        
-
         <section class="weather">
-
             <h2><strong>Idaho Falls Weather</strong></h2>
-        
-        <!-- Code from ealier lessons
+            <!-- Code from ealier lessons
         <img src="images/sun_cloud_weather-icon.webp" alt="weather">
         <p><span id="temp"></span> degrees Celcius</p>
         <p>Partly Cloudy</p>
         <p><span>Wind Speed </span><span id='wind_speed'></span></p>
         <p><span>wind Chill </span><span id='wind_chill'></span></p>  -->
+            <p>Current Temperature <strong id="current-temp"></strong> &deg;F</p>
+            <br>
+            <strong>Current Condition</strong>
+            <figure>
 
-        <p>Current Temperature <strong id="current-temp"></strong> &deg;F</p>
-        <br>
-        <strong>Current Condition</strong>
-        <figure>
+                <figcaption></figcaption>
+            </figure>
+            <img src="https://picsum.photos/300/400" alt="weather placeholder" id="weather-icon">
 
-            <figcaption></figcaption>
-        </figure>
-        <img src="https://picsum.photos/300/400" alt="weather placeholder" id="weather-icon">
+            <p>Wind Speed is <strong id="wind_speed"></strong> mph</p>
+            <p>Wind Chill is <strong id="wind-chill"></strong></p>
 
-        <p>Wind Speed is <strong id="wind_speed"></strong> mph</p>
-        <p>Wind Chill is <strong id="wind-chill"></strong></p>
-   
-    </section>
+        </section>
 
         <section class="spot1">
             <h2>DTC Lawn Care</h2>
@@ -206,7 +190,7 @@
 
         <section class="spot2">
             <h2>S.L.Photography</h2>
-           
+
             <div>
                 <br>
                 <img src="images/stephanie_flower_field.webp" alt="Stephanie Lindquist">

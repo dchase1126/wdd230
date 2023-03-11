@@ -34,6 +34,13 @@
     box-shadow: 0 0 50px #006d77;
   }
 
+  .gallery {
+    width: 500px;
+    height: 350px;
+    border: 4px solid rgb(1, 28, 30);
+    background-color: #d6fdff;
+  }
+
   /*end of discover page*/
 
   /*Join page*/

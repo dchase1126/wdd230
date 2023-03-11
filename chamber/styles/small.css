@@ -156,7 +156,7 @@ main.discover {
   border: 10px solid #006d77;
   padding: 0.5rem;
   width: 90%;
-  background-color: beige;
+  background-color:beige;
 }
 
 .gallery {
@@ -212,6 +212,7 @@ main.join form #contactInfo ul li {
   margin: 5px;
   gap: 10px;
   padding: 10px;
+  background-color: #d6fdff;
 }
 
 main.join form #membership ul li {
@@ -220,6 +221,7 @@ main.join form #membership ul li {
   justify-content: center;
   margin: 15px;
   gap: 10px;
+  background-color: #d6fdff;
 }
 
 main.join form #business ul li label {
@@ -290,7 +292,13 @@ main.thankYou {
 
 #cards > * {
   margin: auto;
-  /* max-width: 90%; */
+  /*max-width: 90%; */
+}
+
+menu.directory {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 .directory h2 {
@@ -366,7 +374,7 @@ section .hero_joinBtn {
   position: relative;
   top: 0;
   right: 0;
-  background-color:#d6fdff;
+  background-color: #d6fdff;
   font-size: 15px;
   padding: 10px 0;
   border: 3px solid #006d77;
@@ -380,7 +388,7 @@ section .hero_joinBtn {
 
 .hero_joinBtn:hover {
   background-color: rgb(1, 28, 30);
-  color:  white;
+  color: white;
 }
 
 .home section.events {
@@ -400,7 +408,7 @@ section .hero_joinBtn {
   justify-content: flex-start;
   text-align: center;
   padding: 35px;
-  background-color:#d6fdff;
+  background-color: #d6fdff;
   color: rgb(1, 28, 30);
   border-style: solid;
 }
@@ -410,7 +418,7 @@ section #weather-icon {
   width: 70px;
 }
 
-.home section.chamber{
+.home section.chamber {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -432,8 +440,8 @@ section #weather-icon {
   border-style: solid;
 }
 
-.home section.news p{
-  padding: 5px; 
+.home section.news p {
+  padding: 5px;
 }
 
 .home section.spot1 {
@@ -451,7 +459,7 @@ section #weather-icon {
   width: 100%;
 }
 
-.home section.spot2{
+.home section.spot2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -459,14 +467,14 @@ section #weather-icon {
   word-spacing: 3px;
   padding: 15px;
   color: rgb(1, 28, 30);
-  border-style: solid; 
+  border-style: solid;
 }
 
 .home section.spot2 img {
   width: 100%;
 }
 
-.home section.spot3{
+.home section.spot3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -474,18 +482,20 @@ section #weather-icon {
   word-spacing: 3px;
   padding: 15px;
   color: rgb(1, 28, 30);
-  border-style: solid; 
+  border-style: solid;
+  
 }
 
 .home section.spot3 img {
   width: 100%;
+ 
 }
 
 footer {
   background-color: #83c5be;
   color: black;
   text-align: center;
-  
+
   padding: 20px 0;
 }
 
