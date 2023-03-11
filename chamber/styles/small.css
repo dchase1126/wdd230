@@ -201,7 +201,7 @@ main.join {
   margin: 20px auto;
   border: 10px solid #006d77;
   padding: 0.5rem;
-  width: 100%;
+  width: 90%;
   background-color: beige;
 }
 
@@ -488,14 +488,44 @@ section #weather-icon {
 
 .home section.spot3 img {
   width: 100%;
- 
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: 10px solid #006d77;
+  padding: 0.5rem;
+  width: 90%;
+  background-color: white;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+}
+
+.contact section.hours{
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #006d77;
+  padding: 0.5rem;
+  width: 100%;
+  color: rgb(1, 28, 30);
+}
+
+.contact section.staff{
+  word-spacing: 3px;
+  padding: 3rem;
+  width: 100%;
+  color: rgb(1, 28, 30);
 }
 
 footer {
   background-color: #83c5be;
   color: black;
   text-align: center;
-
   padding: 20px 0;
 }
 
