@@ -250,6 +250,51 @@ input[type="radio"] {
   padding: 10px;
 }
 
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(1, 28, 30);
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+td, th {
+  border: 1px solid rgb(1, 28, 30);
+  padding: 10px 20px;
+  
+}
+
+th  {
+ /* background-color: rgb(235,235,235);*/
+ background-color: rgb(1, 28, 30);
+ color: White ;
+}
+
+td {
+  text-align: center;
+  background-color: whitesmoke;
+ 
+}
+tbody tr:nth-child(2) td {
+  background-color: whitesmoke;
+}
+
+tr:nth-child(even) td {
+  /*background-color: lightgreen;*/
+  background-color: whitesmoke;
+}
+
+tr:nth-child(odd) td {
+ /* background-color: rgb(245,245,245);*/
+  background-color: #d6fdff;
+}
+
+caption {
+  display: table-caption;
+  text-align: center;
+  padding: 10px;
+  caption-side: bottom;
+}
+
 /*End of Join Page */
 
 /*Thank You Page*/
@@ -370,6 +415,10 @@ section img {
   border-style: solid;
 }
 
+.home .hero_section p {
+  padding: 15px;
+}
+
 section .hero_joinBtn {
   position: relative;
   top: 0;
@@ -407,7 +456,7 @@ section .hero_joinBtn {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  padding: 35px;
+  padding: 80px;
   background-color: #d6fdff;
   color: rgb(1, 28, 30);
   border-style: solid;
@@ -509,18 +558,53 @@ section #weather-icon {
 .contact section.hours{
   align-items: center;
   justify-content: center;
-  border: 3px solid #006d77;
+  
   padding: 0.5rem;
   width: 100%;
   color: rgb(1, 28, 30);
 }
 
-.contact section.staff{
+main.contact section.staff{
   word-spacing: 3px;
   padding: 3rem;
   width: 100%;
   color: rgb(1, 28, 30);
+  margin-top: 25px;
+  border: 3px solid #006d77;
 }
+
+main.contact .contactForm ul li {
+  display: flex;
+  flex-direction: right;
+  align-items: center;
+  margin: 5px;
+  gap: 10px;
+  padding: 10px;
+  background-color: beige;
+}
+
+main.contact #membership ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  gap: 10px;
+  background-color: beige;
+}
+
+main.contact .contactForm ul li label {
+  padding: 10px;
+}
+
+.contact .submitBtn {
+  top: 0;
+  right: 0;
+  background-color: #d6fdff;
+  font-size: 15px;
+  padding: 10px 0;
+  border: 3px solid #006d77;
+}
+
 
 footer {
   background-color: #83c5be;

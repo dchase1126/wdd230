@@ -77,7 +77,7 @@
     </div>
 
     <main class="contact">
-        <h1><strong>Contact Us</strong></h1>
+        <h1><strong>Contact the Chamber</strong></h1>
 
         <section>
             <picture>
@@ -92,57 +92,131 @@
             <div>
                 <p><strong>365 River Pkwy, <br>
                         Idaho Falls, ID 83402</strong></p>
-                <p>http://www.idahofallschamber.com/</p>
-                <p>Phone: (208)523-1010</p>
+                <p>http://www.idahofallschamber.com</p>
+                <p>Phone: (208) 523-1010</p>
                 <p>Fax: (208) 523-2255</p> <br>
 
                 <strong>Chamber's Hours</strong> <br>
                 Monday - Friday: 9:00 am - 5:00 pm <br>
                 Saturday: Closed <br>
                 Sunday: Closed
+                <a class="hero_joinBtn" href="/chamber/join.html">Join the Chamber</a>
             </div>
+        </section>
+
+        <div>
             <picture>
                 <source srcset="images/idaho_falls_map(1).webp" media="(min-width: 1080px)">
                 <source srcset="images/idaho_falls_map(1).webp" media="(min-width:560px)">
                 <img src="images/idaho_falls_map(1).webp" alt="Map of Idaho Falls area">
             </picture>
-            <a class="hero_joinBtn" href="/chamber/join.html">Join the Chamber</a>
-        </section>
+        </div>
 
-        <section class="staff">
-            <H3><strong>STAFF</strong></H3>
+        <form>
 
-            <div>
-                <p><strong>Steve Hunter</strong> -
-                    Interim Chief Executive Officer -
-                    208-523-1010 Option 5 -
-                    ceo@idahofallschamber.com</p>
-            </div>
-            <div>
-                <p><strong>Michelle Covert</strong> -
-                    Business Operations Manager -
-                    208-523-1010 Option 4 -
-                    officemgr@idahofallschamber.com</p>
-            </div>
-            <div>
-                <p><strong>Jen Emery</strong> -
-                    Visitors Center Manager -
-                    208-523-1010 Option 1 -
-                    infospecialist@idahofallschamber.com</p>
-            </div>
-            <div>
-                <p><strong>Stacy Butcher</strong> -
-                    Programs and Events Coordinator -
-                    208-523-1010 Option 3 -
-                    programs@idahofallschamber.com</p>
-            </div>
-            <div>
-                <p><strong>Larissa Hale</strong> -
-                    Marketing and Communications Coordinator -
-                    208-523-1010 Option 2 -
-                    marketing@idahofallschamber.com</p>
-            </div>
-        </section>
+            <section class="contactForm">
+                <h3><p>Send us your questions or comments using the form below. We will respond promptly to your inquiry.
+                </p></h3>
+
+                <fieldset id="contactInfo">
+
+
+                    <legend>Member Information</legend>
+
+                    <ul>
+
+                        <li>
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </li>
+
+                        <li>
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </li>
+
+                        <li>
+                            <label for="title">Business Title*</label>
+                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                        </li>
+
+                        <li>
+                            <label for="mail">Mailing Address*</label>
+                            <input type="mail" id="mail" name="mail" placeholder="Mailing Address" required>
+                        </li>
+
+                        <li>
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                        </li>
+
+                        <li>
+                            <label for="tel">Cell Phone*</label>
+                            <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
+                        </li>
+
+                        <li>
+                            <label for="contactPreference">Contact Preference*</label>
+                            <input type="text" id="contactPreference" name="contactPreference"
+                                placeholder="phone, email, mail" required>
+                        </li>
+                    </ul>
+
+                    <fieldset id="business">
+
+                        <legend>Comments/Questions</legend>
+
+                        <ul>
+                            <li>
+                                <label for="descriptionTextarea">Questions or Comments*</label>
+                                <textarea id="descriptionTextarea" name="descriptionTextarea"
+                                    placeholder="Briefly type comments or questions here" required></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <input type="hidden" id="crntdaytime">
+
+                    <button type="submit" class="submitBtn"> contact us </button>
+
+                </fieldset>
+            </section>
+
+            <section class="staff">
+                <H3><strong>Points of Contact</strong></H3>
+
+                <div>
+                    <p><strong>Steve Hunter</strong> -
+                        Interim Chief Executive Officer -
+                        208-523-1010 Option 5 -
+                        ceo@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Michelle Covert</strong> -
+                        Business Operations Manager -
+                        208-523-1010 Option 4 -
+                        officemgr@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Jen Emery</strong> -
+                        Visitors Center Manager -
+                        208-523-1010 Option 1 -
+                        infospecialist@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Stacy Butcher</strong> -
+                        Programs and Events Coordinator -
+                        208-523-1010 Option 3 -
+                        programs@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Larissa Hale</strong> -
+                        Marketing and Communications Coordinator -
+                        208-523-1010 Option 2 -
+                        marketing@idahofallschamber.com</p>
+                </div>
+            </section>
+        </form>   
     </main>
 
     <footer>
