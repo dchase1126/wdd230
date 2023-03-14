@@ -44,6 +44,18 @@
   /*end of discover page*/
 
   /*Join page*/
+
+  table {
+    display: block;
+    border-collapse: collapse;
+    border: 2px solid rgb(1, 28, 30);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    justify-content: left;
+    float: left;
+    padding: 10px;
+  }
+
   main.join form #contactInfo ul li {
     flex-direction: row;
     justify-content: space-between;
@@ -76,6 +88,18 @@
   section .banner {
     background-color: #d6fdff;
     border: 2px solid #006d77;
+  }
+
+  .home section.spot1 {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    word-spacing: 3px;
+    padding: 15px;
+    color: rgb(1, 28, 30);
+    border-style: solid;
   }
   /*
 .column {

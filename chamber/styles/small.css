@@ -209,10 +209,16 @@ main.join form #contactInfo ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px;
+  margin: 15px;
   gap: 10px;
-  padding: 10px;
+  padding: 5px;
   background-color: #d6fdff;
+}
+
+main.join form #contactInfo {
+  border: 5px solid rgb(1, 28, 30);
+  padding: 10px;
+  margin: 5%;
 }
 
 main.join form #membership ul li {
@@ -220,12 +226,27 @@ main.join form #membership ul li {
   flex-direction: column;
   justify-content: center;
   margin: 15px;
-  gap: 10px;
   background-color: #d6fdff;
+  padding: 5px;
+  border: 3px solid rgb(1, 28, 30);
+}
+
+main.join form #membership {
+  margin: 5%;
+  padding: 10px;
+  border: 5px solid rgb(1, 28, 30);
 }
 
 main.join form #business ul li label {
   padding: 10px;
+}
+
+main.join form #business {
+  margin: 15px;
+  gap: 10px;
+  padding: 5px;
+  background-color: #d6fdff; 
+  border: 3px solid rgb(1, 28, 30);
 }
 
 .join .submitBtn {
@@ -233,8 +254,8 @@ main.join form #business ul li label {
   right: 0;
   background-color: #d6fdff;
   font-size: 15px;
-  padding: 10px 0;
-  border: 3px solid #006d77;
+  padding: 10px;
+  border: 3px solid rgb(1, 28, 30);
 }
 
 input[type="radio"] {
@@ -251,8 +272,10 @@ input[type="radio"] {
 }
 
 table {
+  display: none;
+  margin:10%;
   border-collapse: collapse;
-  border: 2px solid rgb(1, 28, 30);
+  border: 3px solid rgb(1, 28, 30);
   letter-spacing: 1px;
   font-size: 1rem;
 }
@@ -494,6 +517,7 @@ section #weather-icon {
 }
 
 .home section.spot1 {
+ 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -580,9 +604,8 @@ main.contact section.staff{
 
 main.contact .contactForm ul li {
   display: flex;
-  flex-direction: right;
+  /*flex-direction: right;*/
   align-items: center;
-  
   margin: 5px;
   gap: 10px;
   padding: 10px;
@@ -594,7 +617,7 @@ main.contact #membership ul li {
   flex-direction: column;
   justify-content: center;
   margin: 15px;
-  gap: 10px;
+  gap: 5px;
   background-color: beige;
 }
 
