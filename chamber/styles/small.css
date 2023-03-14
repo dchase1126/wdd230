@@ -539,6 +539,8 @@ section #weather-icon {
   width: 100%;
 }
 
+
+
 .contact{
   display: flex;
   flex-direction: column;
@@ -546,7 +548,7 @@ section #weather-icon {
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  border: 10px solid #006d77;
+  /*border: 10px solid #006d77;*/
   padding: 0.5rem;
   width: 90%;
   background-color: white;
@@ -563,6 +565,9 @@ section #weather-icon {
   width: 100%;
   color: rgb(1, 28, 30);
 }
+.contact div img{
+  width: 95%;
+}
 
 main.contact section.staff{
   word-spacing: 3px;
@@ -577,6 +582,7 @@ main.contact .contactForm ul li {
   display: flex;
   flex-direction: right;
   align-items: center;
+  
   margin: 5px;
   gap: 10px;
   padding: 10px;
