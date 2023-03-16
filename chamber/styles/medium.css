@@ -2,7 +2,7 @@
   .header-first_line {
     padding: 10px;
   }
-  
+
   nav {
     position: relative;
     right: 0;
@@ -59,12 +59,16 @@
   main.join form #contactInfo ul li {
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px 30px;
   }
 
   main.join form #contactInfo ul {
-    max-width: 500px;
+    /* max-width: 500px; */
+    margin: auto;
   }
-
+  main.join form #contactInfo ul li input {
+    width: 300px;
+  }
   /*end of join page*/
 
   main.home {
@@ -90,8 +94,7 @@
     border: 2px solid #006d77;
   }
 
-  .home section.spot1 {
-  
+  .home section.spot3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

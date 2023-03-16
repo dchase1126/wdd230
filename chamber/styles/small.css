@@ -156,7 +156,7 @@ main.discover {
   border: 10px solid #006d77;
   padding: 0.5rem;
   width: 90%;
-  background-color:beige;
+  background-color: beige;
 }
 
 .gallery {
@@ -215,6 +215,10 @@ main.join form #contactInfo ul li {
   background-color: #d6fdff;
 }
 
+main.join form #contactInfo ul li input {
+  padding: 5px;
+}
+
 main.join form #contactInfo {
   border: 5px solid rgb(1, 28, 30);
   padding: 10px;
@@ -238,20 +242,25 @@ main.join form #membership {
 }
 
 main.join form #business ul li label {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 main.join form #business {
-  margin: 15px;
+  margin: 15px 40px;
   gap: 10px;
   padding: 5px;
-  background-color: #d6fdff; 
+  background-color: #d6fdff;
   border: 3px solid rgb(1, 28, 30);
+}
+main.join form #business ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .join .submitBtn {
-  top: 0;
-  right: 0;
+  margin-left: auto;
+  display: block;
   background-color: #d6fdff;
   font-size: 15px;
   padding: 10px;
@@ -273,29 +282,28 @@ input[type="radio"] {
 
 table {
   display: none;
-  margin:10%;
+  margin: 10%;
   border-collapse: collapse;
   border: 3px solid rgb(1, 28, 30);
   letter-spacing: 1px;
   font-size: 1rem;
 }
 
-td, th {
+td,
+th {
   border: 1px solid rgb(1, 28, 30);
   padding: 10px 20px;
-  
 }
 
-th  {
- /* background-color: rgb(235,235,235);*/
- background-color: rgb(1, 28, 30);
- color: White ;
+th {
+  /* background-color: rgb(235,235,235);*/
+  background-color: rgb(1, 28, 30);
+  color: White;
 }
 
 td {
   text-align: center;
   background-color: whitesmoke;
- 
 }
 tbody tr:nth-child(2) td {
   background-color: whitesmoke;
@@ -307,7 +315,7 @@ tr:nth-child(even) td {
 }
 
 tr:nth-child(odd) td {
- /* background-color: rgb(245,245,245);*/
+  /* background-color: rgb(245,245,245);*/
   background-color: #d6fdff;
 }
 
@@ -346,14 +354,44 @@ main.thankYou {
   border: 10px solid #006d77;
   width: 90%; 
 }*/
+.menu #gridBtn {
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 60px;
+  width: 60px;
+  border: 3px solid #006d77;
+  background-color: #d6fdff;
+}
+
+#gridBtn:hover{
+    background-color: rgb(1, 28, 30);
+    color: white;
+}
+
+.menu #listBtn{
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #006d77;
+  background-color: #d6fdff;
+}
+
+#listBtn:hover{
+  background-color: rgb(1, 28, 30);
+  color: white;
+}
 
 .gridLayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-  justify-content: center;
 }
-
+.gridLayout > * {
+  height: 100%;
+}
 .listLayout {
   grid-template-columns: 1fr;
 }
@@ -517,7 +555,6 @@ section #weather-icon {
 }
 
 .home section.spot1 {
- 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -548,7 +585,7 @@ section #weather-icon {
 }
 
 .home section.spot3 {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
@@ -556,16 +593,13 @@ section #weather-icon {
   padding: 15px;
   color: rgb(1, 28, 30);
   border-style: solid;
-  
 }
 
 .home section.spot3 img {
   width: 100%;
 }
 
-
-
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -581,19 +615,19 @@ section #weather-icon {
   color: rgb(1, 28, 30);
 }
 
-.contact section.hours{
+.contact section.hours {
   align-items: center;
   justify-content: center;
-  
+
   padding: 0.5rem;
   width: 100%;
   color: rgb(1, 28, 30);
 }
-.contact div img{
+.contact div img {
   width: 95%;
 }
 
-main.contact section.staff{
+main.contact section.staff {
   word-spacing: 3px;
   padding: 3rem;
   width: 100%;
@@ -633,7 +667,6 @@ main.contact .contactForm ul li label {
   padding: 10px 0;
   border: 3px solid #006d77;
 }
-
 
 footer {
   background-color: #83c5be;
