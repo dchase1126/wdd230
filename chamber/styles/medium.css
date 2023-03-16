@@ -15,8 +15,6 @@
 
   nav ul#primaryNav {
     display: flex;
-    /*justify-content: flex-end; */ /* or justify-content: center;*/
-
     border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
 
@@ -63,12 +61,12 @@
   }
 
   main.join form #contactInfo ul {
-    /* max-width: 500px; */
     margin: auto;
   }
   main.join form #contactInfo ul li input {
     width: 300px;
   }
+
   /*end of join page*/
 
   main.home {
@@ -104,27 +102,5 @@
     color: rgb(1, 28, 30);
     border-style: solid;
   }
-  /*
-.column {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 2em;
-    border-style: solid;
-    border-color: #006d77;
-        
-}
-    
-.column :first-child {
-    align-self: center;
-}
-    
-section .column {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 2em;
-    justify-content: space-between;
-    border-style: solid;
-    border-color: #006d77;
-}*/
+ 
 }

@@ -1,3 +1,4 @@
+/*Header and Nav Bar*/
 * {
   margin: 0;
   padding: 0;
@@ -123,6 +124,8 @@ nav ul.open {
   margin: 10px;
 }
 
+/*End of Header and Nav Bar*/
+
 #banner {
   display: none;
   padding: 5px 0;
@@ -145,7 +148,9 @@ main.home {
   background-color: beige;
 }
 
+
 /*Discover Page */
+
 main.discover {
   display: flex;
   flex-direction: column;
@@ -187,7 +192,9 @@ p {
 
 /*end of discover page*/
 
+
 /*Join Page */
+
 main.join li {
   list-style: none;
 }
@@ -296,7 +303,6 @@ th {
 }
 
 th {
-  /* background-color: rgb(235,235,235);*/
   background-color: rgb(1, 28, 30);
   color: White;
 }
@@ -310,12 +316,10 @@ tbody tr:nth-child(2) td {
 }
 
 tr:nth-child(even) td {
-  /*background-color: lightgreen;*/
   background-color: whitesmoke;
 }
 
 tr:nth-child(odd) td {
-  /* background-color: rgb(245,245,245);*/
   background-color: #d6fdff;
 }
 
@@ -328,7 +332,9 @@ caption {
 
 /*End of Join Page */
 
+
 /*Thank You Page*/
+
 main.thankYou {
   display: flex;
   flex-direction: column;
@@ -342,18 +348,12 @@ main.thankYou {
   background-color: beige;
   font-size: 25px;
 }
+
 /* end of Thank You page*/
+
 
 /*Directory Page*/
 
-/*main.directory {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-  border: 10px solid #006d77;
-  width: 90%; 
-}*/
 .menu #gridBtn {
   align-items: center;
   justify-content: center;
@@ -435,7 +435,6 @@ menu.directory {
 
 }
 
-
 .directory #cards section {
   display: flex;
   flex-direction: column;
@@ -467,6 +466,8 @@ menu.directory {
 }
 
 /*End of Directory Page*/
+
+/*Home Page*/
 
 main > * {
   background-color: white;
@@ -614,6 +615,9 @@ section #weather-icon {
   width: 100%;
 }
 
+
+/*Contact page*/
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -621,7 +625,6 @@ section #weather-icon {
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  /*border: 10px solid #006d77;*/
   padding: 0.5rem;
   width: 90%;
   background-color: white;
@@ -633,7 +636,6 @@ section #weather-icon {
 .contact section.hours {
   align-items: center;
   justify-content: center;
-
   padding: 0.5rem;
   width: 100%;
   color: rgb(1, 28, 30);
@@ -653,7 +655,6 @@ main.contact section.staff {
 
 main.contact .contactForm ul li {
   display: flex;
-  /*flex-direction: right;*/
   align-items: center;
   margin: 5px;
   gap: 10px;
