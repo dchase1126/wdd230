@@ -364,12 +364,12 @@ main.thankYou {
   background-color: #d6fdff;
 }
 
-#gridBtn:hover{
-    background-color: rgb(1, 28, 30);
-    color: white;
+#gridBtn:hover {
+  background-color: rgb(1, 28, 30);
+  color: white;
 }
 
-.menu #listBtn{
+.menu #listBtn {
   align-items: center;
   justify-content: center;
   margin: 30px;
@@ -379,7 +379,7 @@ main.thankYou {
   background-color: #d6fdff;
 }
 
-#listBtn:hover{
+#listBtn:hover {
   background-color: rgb(1, 28, 30);
   color: white;
 }
@@ -391,14 +391,32 @@ main.thankYou {
 }
 .gridLayout > * {
   height: 100%;
+
 }
 .listLayout {
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(200px, 1fr);
+}
+
+.listLayout > * {
+  flex-direction: row !important;
+}
+.directory .listLayout > * img {
+  display: none;
+}
+
+.directory .listLayout > * h2 {
+  font-size: 1em;
+  width: 250px;
+}
+
+.directory .listLayout > * p {
+  margin: Auto;
+  justify-content: center;
+  font-size: 0.9em;
 }
 
 #cards > * {
   margin: auto;
-  /*max-width: 90%; */
 }
 
 menu.directory {
@@ -410,28 +428,25 @@ menu.directory {
 .directory h2 {
   color: rgb(1, 28, 30);
   width: 100%;
-  padding: 15px;
+  padding: 5px;
   font-size: 30px;
   text-align: center;
   background-color: beige;
-  border: 3px solid #006d77;
+
 }
 
-.directory h2 {
-  color: rgb(1, 28, 30);
-  margin: 10px;
-  padding: 5px;
-  align-items: center;
-}
 
 .directory #cards section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
-  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  margin: auto;
   background-color: beige;
   border: 3px solid #006d77;
+  
 }
 
 .directory section > p {
