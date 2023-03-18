@@ -1,0 +1,223 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+
+body {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: sansita, cookie, sans-serif;
+}
+
+.logobox img{
+  display: flex;
+  margin: 20px;
+  background-color: #eaf68f;
+  border: 8px double rgb(1, 28, 30);
+  padding: 10px;
+  max-width: 200px;
+}
+
+header {
+  background-color: rgb(2, 57, 23);
+  padding: 10px 0px;
+}
+
+.header-first_line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 35px 0 10px;
+}
+.header-first_line .logobox img {
+  width: 100%;
+  align-items: left;
+  gap: 10px;
+}
+
+.header-first_line .header-title h1 {
+  font-size: 30px;
+  padding: 25px;
+}
+
+.header-title p {
+  margin: 0;
+}
+
+#hamburgerBtn {
+  width: 30px;
+  border: none;
+  height: 30px;
+  padding: 5px;
+  background-color: transparent;
+}
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+nav {
+  z-index: 1;
+}
+
+nav {
+    background-color: snow;
+    position: center;
+    right: 10px;
+    top: 21px;
+    text-align: right;
+    opacity: 0.8;
+  }
+
+nav ul {
+  list-style: none; /* removes the bullets! */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  padding: 15px;
+  font-size: 1em;
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul li a {
+  background-color: rgb(1, 28, 30);
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+nav ul.open {
+  display: block;
+}
+
+/*Social media buttons*/
+.media_group { 
+  display: flex;
+  gap: 5px;
+  padding: 15px;
+  justify-content: right;
+}
+
+.media_group img {
+  width: 35px;
+  margin: 10px;
+  justify-content: right;
+}
+/* end of Social media buttons*/
+
+#currentDate {
+  text-align: center;
+  background-color: snow;
+  padding: 15px;
+  margin: 10px;
+}
+
+/*End of Header and Nav Bar*/
+
+#banner {
+  display: none;
+  padding: 5px 0;
+  width: 90%;
+  font-size: 30px;
+  background-color: #eaf68f;
+  border: 5px solid rgb(1, 28, 30);
+  opacity: 0.8;
+  margin: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  background-color: snow;
+  margin: 0 auto;
+}
+
+main .weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 80px;
+  background-color: rgb(2, 57, 23);
+  color: white;
+  border-style: solid;
+
+}
+
+main.weather #weather-icon {
+  text-align: center;
+  width: 70px;
+}
+
+.spot img {
+ width: 350px;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 35px 0 10px;
+  background-color: lightgreen;
+  color: rgb(1, 28, 30);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer.media_group { 
+  display: flex;
+  gap: 5px;
+  padding: 15px;
+  justify-content: right;
+}
+
+footer.media_group img {
+  width: 35px;
+  margin: 10px;
+  justify-content: right;
+}
+
+footer p{
+  text-align: center; 
+}
+
+#lastModified{
+  text-align: center;
+  font-size: smaller;
+}
+
+/********************************* Fresh Page ****************/
+
+
+
+
+
+/********************************* About Us Page ***************************/

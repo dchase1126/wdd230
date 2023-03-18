@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <meta name="description"
+        content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
+                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
+
+    <link rel="icon" href="images\favicon (2).ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/displayMenu.js" defer></script>
+    <script src="scripts/todaysdate.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <!--<script src="scripts/windchill.js" defer></script>-->
+    <script src="scripts/weatherapi2.js" defer></script>
+
+    <title>Bountiful Foods of Carlsbad</title>
+
 </head>
+
 <body>
-    
+
+    <header>
+
+
+        <div class="header-first_line">
+            <div class="logobox">
+                <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+
+                <div class="header-title">
+                    <h1></h1>
+                </div>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="media_group">
+
+                <span><a href="https://www.facebook.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
+                            alt="facebook icon"></a></span>
+                <span><a href="https://www.instagram.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                            alt="instagram"></a></span>
+            </div>
+        </div>
+        <div class="banner">
+            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at 7:00
+                p.m."</p>
+        </div>
+        <div id="currentDate"></div>
+
+    </header>
+
+    <main>
+
+        <section class="weather">
+            <h2><strong>Carlsbad Weather</strong></h2>
+            <!-- Code from ealier lessons
+        <img src="images/sun_cloud_weather-icon.webp" alt="weather">
+        <p><span id="temp"></span> degrees Celcius</p>
+        <p>Partly Cloudy</p>
+        <p><span>Wind Speed </span><span id='wind_speed'></span></p>
+        <p><span>wind Chill </span><span id='wind_chill'></span></p>  -->
+            <p>Current Temperature <strong id="current-temp"></strong> &deg;F</p>
+            <br>
+            <strong>Current Condition</strong>
+            <figure>
+                <figcaption></figcaption>
+            </figure>
+            <img src="https://picsum.photos/300/400" alt="weather placeholder" id="weather-icon">
+
+            <p>Wind Speed is <strong id="wind_speed"></strong> mph</p>
+            <p>Wind Chill is <strong id="wind-chill"></strong></p>
+            <p>Humidity is <strong id="humidity"></strong></p>
+            <p>5 day forecast is </p>
+
+        </section>
+
+        <section>
+            <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
+            <p>Bountiful Foods is small business specializing in organic, locally grown foods.<br> 
+                We are physically located in Carlsbad, California, however, we have many 
+                food trucks that cover the coastal area from Los Angeles to San Diego.<br> 
+                Bountiful Foods sells fruits and produce directly from the farmers in the area, 
+                but also use some national and international suppliers.</p>
+        </section>
+
+        <section class="spot">
+            <h2>Welcome to Carlsbad</h2>
+
+            <div>
+                <br>
+                <img src="images/carlsbad-sign.jpg" alt="Carlsbad Sign">
+            </div>
+            <p>
+                The owner-operated company caters to walk in traffic at their storefront in Carlsbad and,
+                of course, their food trucks. We deliver and manage orders on the phone and via the website.
+                Our mission is to provide fresh and healthy food options, including organic, made to order,
+                fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas.
+                We support healthy eating, organic bounty, and convenience.
+            </p>
+            <p>417 South 100 West <br> Carlsbad, California <br>(760) 524-3570
+            </p>
+            <a class="hero_joinBtn" href="directory.html">See Business </a>
+        </section>
+
+        <section>
+            <img src="images/Organic-Food-450-opt.jpg" alt="person holding a bag of fruit">
+        <p>We support healthy eating, organic bounty, and convenience.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div></div>
+        <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+        <P>Bountiful Foods</P>
+        <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
+        <p>http://www.BountifulFoods.com/</p>
+        <p>(760) 524-3570</p>
+
+        <a href="https://business.idahofallschamber.com/map"> location map</a> <br>
+        <a href="https://openweathermap.org"> open weather map </a>
+
+
+        <div>
+            <p>
+                &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 - Final Project
+            </p>
+            <div class="media_group">
+
+                <span><a href="https://www.facebook.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
+                            alt="facebook icon"></a></span>
+                <span><a href="https://www.instagram.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                            alt="instagram"></a></span>
+            </div>
+
+            <div id="lastModified"></div>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Idaho Falls&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
 
 
 // select HTML elements in the document

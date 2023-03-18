@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
+                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
+
+    <link rel="icon" href="images\favicon (2).ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/displayMenu.js" defer></script>
+    <script src="scripts/todaysdate.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <!--<script src="scripts/windchill.js" defer></script>-->
+    <script src="scripts/weatherapi2.js" defer></script>
+
+    <title>Bountiful Foods of Carlsbad</title>
+
 </head>
+
 <body>
-    
+
+    <header>
+
+
+        <div class="header-first_line">
+            <div class="logobox">
+                <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+
+                <div class="header-title">
+                    <h1></h1>
+                </div>
+
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="header-media_group">
+
+                <span><a href="https://www.facebook.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
+                            alt="facebook icon"></a></span>
+                <span><a href="https://www.instagram.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                            alt="instagram"></a></span>
+            </div>
+        </div>
+
+        <div class="banner">
+            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at
+                7:00
+                p.m."</p>
+        </div>
+        <div id="currentDate"></div>
+
+    </header>
+
+
+
+    <main>
+        <section class="image">
+            <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
+        </section>
+
+        <form action="thankyou.html">
+
+            <fieldset id="contactInfo">
+
+
+                <legend>Member Information</legend>
+
+                <ul>
+
+                    <li>
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </li>
+
+                    <li>
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </li>
+
+                    <li>
+                        <label for="title">Business Title*</label>
+                        <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                    </li>
+
+                    <li>
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                    </li>
+
+                    <li>
+                        <label for="tel">Cell Phone*</label>
+                        <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
+                    </li>
+
+                    <li>
+                        <label for="businessName">Business Name*</label>
+                        <input type="text" id="businessName" name="businessName" required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="business">
+
+                <legend>About your Business</legend>
+
+                <ul>
+                    <li>
+                        <label for="descriptionTextarea">Business Description*</label>
+                        <textarea id="descriptionTextarea" name="descriptionTextarea" rows="4"
+                            placeholder="Briefly describe your business" required></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <input type="hidden" id="crntdaytime">
+
+            <button type="submit" class="submitBtn"> Create Chamber Account </button>
+
+        </form>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div></div>
+        <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+        <P>Bountiful Foods</P>
+        <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
+        <p>http://www.BountifulFoods.com/</p>
+        <p>(760) 524-3570</p>
+
+        <a href="https://business.idahofallschamber.com/map"> location map</a> <br>
+        <a href="https://openweathermap.org"> open weather map </a>
+
+
+        <div>
+            <p>
+                &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 - Final Project
+            </p>
+
+            <div id="lastModified"></div>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>

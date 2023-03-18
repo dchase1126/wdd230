@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
+                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
+
+
+                 <link rel="icon" href="images\favicon (2).ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/displayMenu.js" defer></script>
+    <script src="scripts/todaysdate.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <!--<script src="scripts/windchill.js" defer></script>-->
+    <script src="scripts/weatherapi.js" defer></script>
+
+    <title>Bountiful Foods of Carlsbad</title>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="image">
+            <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
+        </section>
+
+        <div class="header-first_line">
+            <div class="logobox">
+                <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+
+                <div class="header-title">
+                    <h1>Bountiful Foods</h1>
+
+                </div>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                   
+                </ul>
+            </nav>
+
+            <div class="header-media_group">
+
+                <span><a href="https://www.facebook.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
+                            alt="facebook icon"></a></span>
+                <span><a href="https://www.instagram.com"><img
+                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                            alt="instagram"></a></span>
+            </div>
+        </div>
+
+
+        <div id="currentDate"></div>
+
+    </header>
+
+    <div class="banner">
+        <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at 7:00
+            p.m."</p>
+    </div>
+
+<!--
+    <main class="contact">
+        <h1><strong>Contact us</strong></h1>
+
+        <div>
+            <picture>
+                <source srcset="images/teton.jpg.webp" media="(min-width: 1080px)">
+                <source srcset="images/teton.jpg.webp" media="(min-width:560px)">
+                <img src="images/teton.jpg.webp" alt="Map of Idaho Falls area">
+            </picture>
+        </div>
+
+        <section class="hours">
+            <h2>The Idaho Falls Chamber of Commerce</h2>
+            <div>
+                <p><strong>365 River Pkwy, <br>
+                        Idaho Falls, ID 83402</strong></p>
+                <p>http://www.idahofallschamber.com</p>
+                <p>Phone: (208) 523-1010</p>
+                <p>Fax: (208) 523-2255</p> <br>
+
+                <strong>Chamber's Hours</strong> <br>
+                Monday - Friday: 9:00 am - 5:00 pm <br>
+                Saturday: Closed <br>
+                Sunday: Closed
+                <a class="hero_joinBtn" href="/chamber/join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div>
+            <picture>
+                <source srcset="images/idaho_falls_map(1).webp" media="(min-width: 1080px)">
+                <source srcset="images/idaho_falls_map(1).webp" media="(min-width:560px)">
+                <img src="images/idaho_falls_map(1).webp" alt="Map of Idaho Falls area">
+            </picture>
+        </div>
+
+        <form>
+
+            <section class="contactForm">
+                <h3><strong>Send us your questions or comments using the form below. We will respond promptly to your inquiry.
+                </strong></h3>
+
+                <fieldset id="contactInfo">
+
+
+                    <legend>Member Information</legend>
+
+                    <ul>
+
+                        <li>
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </li>
+
+                        <li>
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </li>
+
+                        <li>
+                            <label for="title">Company Name*</label>
+                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                        </li>
+
+                        <li>
+                            <label for="mail">Mailing Address*</label>
+                            <input type="text" id="mail" name="mail" placeholder="Mailing Address" required>
+                        </li>
+
+                        <li>
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                        </li>
+
+                        <li>
+                            <label for="tel">Cell Phone*</label>
+                            <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
+                        </li>
+
+                        <li>
+                            <label for="contactPreference">Contact Preference*</label>
+                            <input type="text" id="contactPreference" name="contactPreference"
+                                placeholder="phone, email, mail" required>
+                        </li>
+                    </ul>
+
+                    <fieldset id="business">
+
+                        <legend>Comments/Questions</legend>
+
+                        <ul>
+                            <li>
+                                <label for="descriptionTextarea">Questions or Comments*</label>
+                                <textarea id="descriptionTextarea" name="descriptionTextarea"
+                                    placeholder="Briefly type comments or questions here" required></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <input type="hidden" id="crntdaytime">
+
+                    <button type="submit" class="submitBtn"> contact us </button>
+
+                </fieldset>
+            </section>
+
+            <section class="staff">
+                <H3><strong>Points of Contact</strong></H3>
+
+                <div>
+                    <p><strong>Steve Hunter</strong> -
+                        Interim Chief Executive Officer -
+                        208-523-1010 Option 5 -
+                        ceo@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Michelle Covert</strong> -
+                        Business Operations Manager -
+                        208-523-1010 Option 4 -
+                        officemgr@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Jen Emery</strong> -
+                        Visitors Center Manager -
+                        208-523-1010 Option 1 -
+                        infospecialist@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Stacy Butcher</strong> -
+                        Programs and Events Coordinator -
+                        208-523-1010 Option 3 -
+                        programs@idahofallschamber.com</p>
+                </div>
+                <div>
+                    <p><strong>Larissa Hale</strong> -
+                        Marketing and Communications Coordinator -
+                        208-523-1010 Option 2 -
+                        marketing@idahofallschamber.com</p>
+                </div>
+            </section>
+        </form>  
+      -->   
+    </main>
+
+    <footer>
+        <a href="/lesson4"><img src="images/logo.webp" alt="logo"></a>
+        <P>IdahoFalls Chamber of Commerce</P>
+        <p>365 River Pkwy, Idaho Falls, ID 83402</p>
+        <p>http://www.idahofallschamber.com</p>
+        <p>(208)523-1010</p>
+
+        <a href="https://business.idahofallschamber.com/map"> location map</a> <br>
+        <a href="https://openweathermap.org"> open weather map </a>
+
+
+        <div>
+            <p>
+                &copy;2023 <span id="currentyear"></span> | Diane Chase | Chamber of Commerce site | WDD 230 Project
+            </p>
+
+            <div id="lastModified"></div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
