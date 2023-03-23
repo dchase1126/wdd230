@@ -1,9 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}  
+}
 
 body {
   height: auto;
@@ -12,31 +11,25 @@ body {
   font-family: sansita, cookie, sans-serif;
 }
 
-.logobox img{
-  display: flex;
-  margin: 20px;
-  background-color: #eaf68f;
-  border: 8px double rgb(1, 28, 30);
-  padding: 10px;
-  max-width: 200px;
-}
+
 
 header {
-  background-color: rgb(2, 57, 23);
+  background-color: #226F54;
   padding: 10px 0px;
 }
 
 .header-first_line {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 0 35px 0 10px;
+  justify-items: center;
 }
+
 .header-first_line .logobox img {
-  width: 100%;
-  align-items: left;
-  gap: 10px;
+  width: 100px;
+  padding:5px;
+  background-color: #eaf68f;
+  border: 3px solid rgb(1, 28, 30);
 }
 
 .header-first_line .header-title h1 {
@@ -55,6 +48,7 @@ header {
   padding: 5px;
   background-color: transparent;
 }
+
 #hamburgerBtn span:nth-child(1) {
   display: block;
 }
@@ -74,13 +68,11 @@ nav {
 }
 
 nav {
-    background-color: snow;
-    position: center;
-    right: 10px;
-    top: 21px;
-    text-align: right;
-    opacity: 0.8;
-  }
+  background-color: snow;
+  text-align: right;
+  opacity: 0.8;
+  display: inline;
+}
 
 nav ul {
   list-style: none; /* removes the bullets! */
@@ -117,17 +109,16 @@ nav ul.open {
 }
 
 /*Social media buttons*/
-.media_group { 
+.media_group {
   display: flex;
+  width: 100%;
+  grid-column: 1/3;
   gap: 5px;
-  padding: 15px;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 .media_group img {
   width: 35px;
-  margin: 10px;
-  justify-content: right;
 }
 /* end of Social media buttons*/
 
@@ -153,7 +144,7 @@ nav ul.open {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: snow;
   margin: 0 auto;
 }
@@ -167,7 +158,6 @@ main .weather {
   background-color: rgb(2, 57, 23);
   color: white;
   border-style: solid;
-
 }
 
 main.weather #weather-icon {
@@ -176,9 +166,121 @@ main.weather #weather-icon {
 }
 
 .spot img {
- width: 350px;
+  width: 350px;
+}
+/******************** Fresh page **********/
+.menu #gridBtn {
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 60px;
+  width: 60px;
+  border: 3px solid rgb(2, 57, 23);
+  background-color: #94D08B;
 }
 
+#gridBtn:hover {
+  background-color: rgb(1, 28, 30);
+  border: 3px solid #eaf68f;
+  color: white;
+}
+
+.menu #listBtn {
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 60px;
+  width: 60px;
+  border: 3px solid rgb(2, 57, 23);
+  background-color: #94D08B;
+}
+
+#listBtn:hover {
+  background-color: rgb(1, 28, 30);
+  border: 3px solid #eaf68f;
+  color: white;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.gridLayout > * {
+  height: 100%;
+}
+.listLayout {
+  grid-template-columns: minmax(200px, 1fr);
+}
+
+.listLayout > * {
+  flex-direction: row !important;
+}
+.fresh.listLayout > * img {
+  display: none;
+}
+
+.fresh .listLayout > * h2 {
+  font-size: 1em;
+  width: 250px;
+}
+
+.fresh .listLayout > * p {
+  margin: Auto;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+#cards > * {
+  margin: auto;
+}
+
+menu.fresh {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.fresh h2 {
+  color: rgb(1, 28, 30);
+  width: 100%;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #eaf68f;
+  border: 3px solid rgb(1, 28, 30);
+}
+
+.fresh #cards section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  margin: auto;
+  background-color: #87C38F;
+  border: 3px solid rgb(1, 28, 30);
+}
+
+.fresh section > p {
+  align-items: center;
+  color: rgb(1, 28, 30);
+}
+
+.fresh img {
+  width: auto;
+  max-width: 100%;
+  height: 200px;
+  border: 1px solid #006d77;
+}
+
+.fresh li > img {
+  width: auto;
+  height: 30px;
+}
+
+/*End of Fresh Page*/
 
 footer {
   display: grid;
@@ -186,13 +288,13 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 0 35px 0 10px;
-  background-color: lightgreen;
-  color: rgb(1, 28, 30);
+  background-color: #94D08B;
+  color: black;
   text-align: center;
   padding: 20px 0;
 }
 
-footer.media_group { 
+footer.media_group {
   display: flex;
   gap: 5px;
   padding: 15px;
@@ -205,18 +307,25 @@ footer.media_group img {
   justify-content: right;
 }
 
-footer p{
-  text-align: center; 
+footer #address {
+  text-align: center;
+  padding-top: 75px;
 }
 
-#lastModified{
+footer #webaddress {
+  text-align: center;
+  padding-top: 25px;
+}
+
+footer img{
+  float: left;
+  padding: 25px;
+}
+
+#lastModified {
   text-align: center;
   font-size: smaller;
 }
-
-/********************************* Fresh Page ****************/
-
-
 
 
 

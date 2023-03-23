@@ -9,7 +9,7 @@
         content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
                  produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
 
-    <link rel="icon" href="images\favicon (2).ico">
+    <link rel="icon" href="images/favicon.icon">
 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -35,7 +35,10 @@
 
     <header>
 
-
+        <div class="banner">
+            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at
+                7:00 p.m."</p>
+        </div>
         <div class="header-first_line">
             <div class="logobox">
                 <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
@@ -56,18 +59,17 @@
 
             <div class="media_group">
 
-                <span><a href="https://www.facebook.com"><img
-                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
-                            alt="facebook icon"></a></span>
-                <span><a href="https://www.instagram.com"><img
-                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                <span><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                            alt="facebook"></a></span>
+                <span><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.jpg"
                             alt="instagram"></a></span>
+                <span><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"
+                            alt="linkedin"></a></span>
+                <span><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
+                            alt="linkedin"></a></span>
             </div>
         </div>
-        <div class="banner">
-            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at 7:00
-                p.m."</p>
-        </div>
+
         <div id="currentDate"></div>
 
     </header>
@@ -93,17 +95,18 @@
             <p>Wind Speed is <strong id="wind_speed"></strong> mph</p>
             <p>Wind Chill is <strong id="wind-chill"></strong></p>
             <p>Humidity is <strong id="humidity"></strong></p>
-            <p>5 day forecast is </p>
+            <p>3 day forecast is </p>
 
         </section>
 
         <section>
             <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
-            <p>Bountiful Foods is small business specializing in organic, locally grown foods.<br> 
-                We are physically located in Carlsbad, California, however, we have many 
-                food trucks that cover the coastal area from Los Angeles to San Diego.<br> 
-                Bountiful Foods sells fruits and produce directly from the farmers in the area, 
+            <p>Bountiful Foods is small business specializing in organic, locally grown foods.<br>
+                We are physically located in Carlsbad, California, however, we have many
+                food trucks that cover the coastal area from Los Angeles to San Diego.<br>
+                Bountiful Foods sells fruits and produce directly from the farmers in the area,
                 but also use some national and international suppliers.</p>
+            <a class="hero_joinBtn" href="fresh.html">Order Now</a>
         </section>
 
         <section class="spot">
@@ -122,44 +125,40 @@
             </p>
             <p>417 South 100 West <br> Carlsbad, California <br>(760) 524-3570
             </p>
-            <a class="hero_joinBtn" href="directory.html">See Business </a>
+            <a class="hero_joinBtn" href="fresh.html">See Produce</a>
         </section>
 
         <section>
             <img src="images/Organic-Food-450-opt.jpg" alt="person holding a bag of fruit">
-        <p>We support healthy eating, organic bounty, and convenience.</p>
+            <p>We support healthy eating, organic bounty, and convenience.</p>
         </section>
 
     </main>
 
     <footer>
-        <div></div>
-        <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-        <P>Bountiful Foods</P>
-        <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
-        <p>http://www.BountifulFoods.com/</p>
-        <p>(760) 524-3570</p>
 
-        <a href="https://business.idahofallschamber.com/map"> location map</a> <br>
-        <a href="https://openweathermap.org"> open weather map </a>
-
+        <div>
+            <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+            <div id="address">
+                <P>Bountiful Foods</P>
+                <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
+            </div>
+        </div>
 
         <div>
             <p>
                 &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 - Final Project
             </p>
-            <div class="media_group">
-
-                <span><a href="https://www.facebook.com"><img
-                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
-                            alt="facebook icon"></a></span>
-                <span><a href="https://www.instagram.com"><img
-                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
-                            alt="instagram"></a></span>
-            </div>
 
             <div id="lastModified"></div>
-
+        </div>
+        <div id="webaddress">
+            <p>http://www.BountifulFoods.com</p>
+            <p>(760) 524-3570</p>
+            <a
+                href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">
+                location map</a> <br>
+            <a href="https://openweathermap.org"> open weather map </a>
         </div>
     </footer>
 

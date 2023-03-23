@@ -9,7 +9,7 @@
         content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
                  produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
 
-    <link rel="icon" href="images\favicon (2).ico">
+    <link rel="icon" href="images/favicon.icon">
 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -23,9 +23,9 @@
     <script src="scripts/displayMenu.js" defer></script>
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
-    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/fruit.js" defer></script>
     <!--<script src="scripts/windchill.js" defer></script>-->
-    <script src="scripts/weatherapi2.js" defer></script>
+    <!--<script src="scripts/weatherapi2.js" defer></script>-->
 
     <title>Bountiful Foods of Carlsbad</title>
 
@@ -35,14 +35,17 @@
 
     <header>
 
-
+        <div class="banner">
+            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at
+                7:00 p.m."</p>
+        </div>
         <div class="header-first_line">
             <div class="logobox">
                 <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
 
-                <div class="header-title">
+                <!-- <div class="header-title">
                     <h1></h1>
-                </div>
+                </div> -->
 
             </div>
 
@@ -56,91 +59,113 @@
                 </ul>
             </nav>
 
-            <div class="header-media_group">
+            <div class="media_group">
 
-                <span><a href="https://www.facebook.com"><img
-                            src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
-                            alt="facebook icon"></a></span>
-                <span><a href="https://www.instagram.com"><img
-                            src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                <span><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                            alt="facebook"></a></span>
+
+                <span><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.jpg"
                             alt="instagram"></a></span>
+
+                <span><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"
+                            alt="linkedin"></a></span>
+
+                <span><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
+                            alt="linkedin"></a></span>
             </div>
         </div>
 
-        <div class="banner">
-            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at
-                7:00
-                p.m."</p>
-        </div>
         <div id="currentDate"></div>
 
     </header>
 
+    <main class="fresh">
 
+        <section>
+            <h2>Fruit Directory</h2>
+        </section>
 
-    <main>
+        <div class="menu">
+            <button id="gridBtn">⏹️Grid</button>
+            <button id="listBtn">📄List</button>
+        </div>
+
+        <div id="cards" class="gridLayout"></div>
+
         <section class="image">
             <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
         </section>
 
         <form action="thankyou.html">
 
-            <fieldset id="contactInfo">
+            <section>
 
+                <fieldset id="contactInfo">
 
-                <legend>Member Information</legend>
+                    <legend>Customer Information</legend>
 
-                <ul>
+                    <ul>
 
-                    <li>
-                        <label for="firstName">First Name*</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </li>
+                        <li>
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </li>
 
-                    <li>
-                        <label for="lastName">Last Name*</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </li>
+                        <li>
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </li>
 
-                    <li>
-                        <label for="title">Business Title*</label>
-                        <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
-                    </li>
+                        <li>
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                        </li>
 
-                    <li>
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" name="email" placeholder="user@email.com" required>
-                    </li>
+                        <li>
+                            <label for="tel">Cell Phone*</label>
+                            <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
+                        </li>
 
-                    <li>
-                        <label for="tel">Cell Phone*</label>
-                        <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
-                    </li>
+                        <li>
+                            <label for="title">Name of Fruit 1*</label>
+                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                        </li>
 
-                    <li>
-                        <label for="businessName">Business Name*</label>
-                        <input type="text" id="businessName" name="businessName" required>
-                    </li>
-                </ul>
-            </fieldset>
+                        <li>
+                            <label for="title">Name of Fruit 2*</label>
+                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                        </li>
 
-            <fieldset id="business">
+                        <li>
+                            <label for="title">Name of Fruit 3*</label>
+                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                        </li>
 
-                <legend>About your Business</legend>
+                        <li>
+                            <label for="orderDate">Order Date*</label>
+                            <input type="text" id="orderDate" name="orderDate" required>
+                        </li>
 
-                <ul>
-                    <li>
-                        <label for="descriptionTextarea">Business Description*</label>
-                        <textarea id="descriptionTextarea" name="descriptionTextarea" rows="4"
-                            placeholder="Briefly describe your business" required></textarea>
-                    </li>
-                </ul>
-            </fieldset>
+                    </ul>
+                </fieldset>
 
-            <input type="hidden" id="crntdaytime">
+                <fieldset id="business">
 
-            <button type="submit" class="submitBtn"> Create Chamber Account </button>
+                    <legend>Special Instructions</legend>
 
+                    <ul>
+                        <li>
+                            <label for="descriptionTextarea">Drink Instructions*</label>
+                            <textarea id="descriptionTextarea" name="descriptionTextarea" rows="4"
+                                placeholder="Briefly describe how you want your drink." required></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <input type="hidden" id="crntdaytime">
+
+                <button type="submit" class="submitBtn"> Create Chamber Account </button>
+            </section>
         </form>
 
 
@@ -150,16 +175,14 @@
     </main>
 
     <footer>
-        <div></div>
-        <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-        <P>Bountiful Foods</P>
-        <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
-        <p>http://www.BountifulFoods.com/</p>
-        <p>(760) 524-3570</p>
 
-        <a href="https://business.idahofallschamber.com/map"> location map</a> <br>
-        <a href="https://openweathermap.org"> open weather map </a>
-
+        <div>
+            <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
+            <div id="address">
+                <P>Bountiful Foods</P>
+                <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
+            </div>
+        </div>
 
         <div>
             <p>
@@ -167,7 +190,15 @@
             </p>
 
             <div id="lastModified"></div>
+        </div>
+        <div id="webaddress">
+            <p>http://www.BountifulFoods.com</p>
+            <p>(760) 524-3570</p>
 
+            <a
+                href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">
+                location map</a> <br>
+            <a href="https://openweathermap.org"> open weather map </a>
         </div>
     </footer>
 

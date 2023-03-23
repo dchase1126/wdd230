@@ -1,4 +1,5 @@
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&cnt=3&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
+// const url = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&cnt=3&appid=bb0d26cfb4b9fcb67962970ac716e90b`
 
 
 // select HTML elements in the document
@@ -16,8 +17,8 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            currentTemp.innerHTML = data.main.temp
-            console.log(data); // this is for testing the call
+            // currentTemp.innerHTML = data.main.temp
+            console.log(data.list); // this is for testing the call
             displayResults(data);
         } else {
             throw Error(await response.text());

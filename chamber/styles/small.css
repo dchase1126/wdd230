@@ -148,7 +148,6 @@ main.home {
   background-color: beige;
 }
 
-
 /*Discover Page */
 
 main.discover {
@@ -191,7 +190,6 @@ p {
 }
 
 /*end of discover page*/
-
 
 /*Join Page */
 
@@ -332,7 +330,6 @@ caption {
 
 /*End of Join Page */
 
-
 /*Thank You Page*/
 
 main.thankYou {
@@ -350,7 +347,6 @@ main.thankYou {
 }
 
 /* end of Thank You page*/
-
 
 /*Directory Page*/
 
@@ -391,7 +387,6 @@ main.thankYou {
 }
 .gridLayout > * {
   height: 100%;
-
 }
 .listLayout {
   grid-template-columns: minmax(200px, 1fr);
@@ -432,7 +427,6 @@ menu.directory {
   font-size: 30px;
   text-align: center;
   background-color: beige;
-
 }
 
 .directory #cards section {
@@ -445,7 +439,6 @@ menu.directory {
   margin: auto;
   background-color: beige;
   border: 3px solid #006d77;
-  
 }
 
 .directory section > p {
@@ -614,7 +607,6 @@ section #weather-icon {
 .home section.spot3 img {
   width: 100%;
 }
-
 
 /*Contact page*/
 
