@@ -26,6 +26,8 @@
     <script src="scripts/banner.js" defer></script>
     <!--<script src="scripts/windchill.js" defer></script>-->
     <script src="scripts/weatherapi2.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 
     <title>Bountiful Foods of Carlsbad</title>
 
@@ -44,7 +46,7 @@
                 <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
 
                 <div class="header-title">
-                    <h1></h1>
+                    <h1>Bountiful Foods Carlsbad, California</h1>
                 </div>
             </div>
 
@@ -68,23 +70,26 @@
                 <span><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
                             alt="linkedin"></a></span>
             </div>
+
         </div>
 
         <div id="currentDate"></div>
 
     </header>
 
-    <main>
+    <main class="home">
+
 
         <section class="weather">
-            <h2><strong>Carlsbad Weather</strong></h2>
+            <h3>Carlsbad Weather</h3>
+            <!-- <h2><strong>Carlsbad Weather</strong></h2> -->
             <!-- Code from ealier lessons
         <img src="images/sun_cloud_weather-icon.webp" alt="weather">
         <p><span id="temp"></span> degrees Celcius</p>
         <p>Partly Cloudy</p>
         <p><span>Wind Speed </span><span id='wind_speed'></span></p>
         <p><span>wind Chill </span><span id='wind_chill'></span></p>  -->
-            <p>Current Temperature <strong id="current-temp"></strong> &deg;F</p>
+            <!-- <p>Current Temperature <strong id="current-temp"></strong> &deg;F</p>
             <br>
             <strong>Current Condition</strong>
             <figure>
@@ -95,18 +100,24 @@
             <p>Wind Speed is <strong id="wind_speed"></strong> mph</p>
             <p>Wind Chill is <strong id="wind-chill"></strong></p>
             <p>Humidity is <strong id="humidity"></strong></p>
-            <p>3 day forecast is </p>
+            <p>3 day forecast is </p> -->
 
         </section>
 
-        <section>
-            <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
+        <section class=" spot1">
+            <h2>Welcome to Bountiful Foods</h2>
+            <picture>
+                <source srcset="images/food-truck3.webp" media="(min-width: 1080px)">
+                <source srcset="images/food-truck3.webp" media="(min-width:560px)">
+                <img src="images/food-truck3.webp" alt="Bountiful Foods">
+            </picture>
+
             <p>Bountiful Foods is small business specializing in organic, locally grown foods.<br>
                 We are physically located in Carlsbad, California, however, we have many
                 food trucks that cover the coastal area from Los Angeles to San Diego.<br>
                 Bountiful Foods sells fruits and produce directly from the farmers in the area,
                 but also use some national and international suppliers.</p>
-            <a class="hero_joinBtn" href="fresh.html">Order Now</a>
+            <a class="hero_joinBtn" href="fresh.html">See Produce</a>
         </section>
 
         <section class="spot">
@@ -114,23 +125,56 @@
 
             <div>
                 <br>
-                <img src="images/carlsbad-sign.jpg" alt="Carlsbad Sign">
+                <picture>
+                    <source srcset="images/carlsbad-sign.jpg" media="(min-width: 1080px)">
+                    <source srcset="images/carlsbad-sign.jpg" media="(min-width:560px)">
+                    <img src="images/carlsbad-sign.jpg" alt="Bountiful Foods">
+                </picture>
             </div>
             <p>
-                The owner-operated company caters to walk in traffic at their storefront in Carlsbad and,
-                of course, their food trucks. We deliver and manage orders on the phone and via the website.
+                We are a owner-operated company that caters to walk in traffic at our storefront in Carlsbad and,
+                of course, we have many food trucks. We deliver and manage orders on the phone and via the website.
                 Our mission is to provide fresh and healthy food options, including organic, made to order,
                 fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas.
-                We support healthy eating, organic bounty, and convenience.
             </p>
+            <br>
             <p>417 South 100 West <br> Carlsbad, California <br>(760) 524-3570
             </p>
-            <a class="hero_joinBtn" href="fresh.html">See Produce</a>
+            <a class="hero_joinBtn" href="aboutus.html">Contact Us</a>
         </section>
 
         <section>
-            <img src="images/Organic-Food-450-opt.jpg" alt="person holding a bag of fruit">
-            <p>We support healthy eating, organic bounty, and convenience.</p>
+            <h2>Let's start making your next refreshing drink! </h2>
+            <picture id="img1">
+                <source srcset="images/fruit-smoothi.jpg" media="(min-width: 1080px)">
+                <source srcset="images/fruit-smoothi.jpg" media="(min-width:560px)">
+                <img src="images/fruit-smoothi.jpg" alt="Bountiful Foods">
+            </picture>
+
+            <p>We offer a variety of healthy and fresh organic produce to create a refreshing fruit drink for hot days
+                at your convenience.</p>
+
+            <picture id="img2">
+                <source srcset="images/drinks.jpg" media="(min-width: 1080px)">
+                <source srcset="images/drinks.jpg" media="(min-width:560px)">
+                <img src="images/drinks.jpg" alt="Bountiful Foods">
+            </picture>
+
+            <p>Enjoy the refreshing fruit drinks available at our store front in Carlsbad or at one of our many food
+                trucks.</p>
+
+            <picture id="img3">
+                <source srcset="images/fruit-drink-enjoyment.jpg" media="(min-width: 1080px)">
+                <source srcset="images/fruit-drink-enjoyment.jpg" media="(min-width:560px)">
+                <img src="images/fruit-drink-enjoyment.jpg" alt="Bountiful Foods" loading="lazy">
+            </picture>
+
+            <div>
+                <p><span class="label">Last Visit: </span><span id="lastVisit"></span></p>
+                <p><span class="label">Number of Visits: </span><span id="numberVisit"></span></p>
+            </div>
+            
+            <a class="hero_joinBtn" href="fresh.html">Order Now</a>
         </section>
 
     </main>
@@ -151,6 +195,8 @@
             </p>
 
             <div id="lastModified"></div>
+
+
         </div>
         <div id="webaddress">
             <p>http://www.BountifulFoods.com</p>

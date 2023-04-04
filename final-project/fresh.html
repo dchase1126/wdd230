@@ -23,7 +23,10 @@
     <script src="scripts/displayMenu.js" defer></script>
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
     <script src="scripts/fruit.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
     <!--<script src="scripts/windchill.js" defer></script>-->
     <!--<script src="scripts/weatherapi2.js" defer></script>-->
 
@@ -43,9 +46,9 @@
             <div class="logobox">
                 <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
 
-                <!-- <div class="header-title">
-                    <h1></h1>
-                </div> -->
+                <div class="header-title">
+                    <h1>Bountiful Foods of Carlsbad, California</h1>
+                </div>
 
             </div>
 
@@ -82,28 +85,32 @@
     <main class="fresh">
 
         <section>
-            <h2>Fruit Directory</h2>
+            <h2>Fruit Facts and Ordering </h2>
         </section>
+
+
 
         <div class="menu">
             <button id="gridBtn">⏹️Grid</button>
             <button id="listBtn">📄List</button>
         </div>
 
-        <div id="cards" class="gridLayout"></div>
+        <div id="cards" class="gridLayout" loading="lazy"></div>
 
-        <section class="image">
-            <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
-        </section>
 
-        <form action="thankyou.html">
+
+        <!-- <form action="thankyou.html"> -->
+        <form>
+            <section>
+                <h3>Create Your Drink</h3>
+
+            </section>
 
             <section>
 
                 <fieldset id="contactInfo">
 
                     <legend>Customer Information</legend>
-
                     <ul>
 
                         <li>
@@ -127,23 +134,24 @@
                         </li>
 
                         <li>
-                            <label for="title">Name of Fruit 1*</label>
-                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                            <label for="fruit1"> Fruit 1*</label>
+                            <select id="fruit1" name="fruit1">
+                                <option value="">Please Select a fruit</option>
+                            </select>
                         </li>
 
                         <li>
-                            <label for="title">Name of Fruit 2*</label>
-                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
+                            <label for="fruit2">Fruit 2*</label>
+                            <select id="fruit2" name="fruit2">
+                                <option value="">Please Select a fruit</option>
+                            </select>
                         </li>
 
                         <li>
-                            <label for="title">Name of Fruit 3*</label>
-                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
-                        </li>
-
-                        <li>
-                            <label for="orderDate">Order Date*</label>
-                            <input type="text" id="orderDate" name="orderDate" required>
+                            <label for="fruit3">Fruit 3*</label>
+                            <select id="fruit3" name="fruit3">
+                                <option value="">Please Select a fruit</option>
+                            </select>
                         </li>
 
                     </ul>
@@ -164,13 +172,9 @@
 
                 <input type="hidden" id="crntdaytime">
 
-                <button type="submit" class="submitBtn"> Create Chamber Account </button>
+                <button type="submit" class="submitBtn">Place Order</button>
             </section>
         </form>
-
-
-
-
 
     </main>
 

@@ -1,15 +1,4 @@
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&cnt=3&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
-// const url = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&cnt=3&appid=bb0d26cfb4b9fcb67962970ac716e90b`
-
-
-// select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const windChill = document.getElementById('wind-chill');
-const windSpeed = document.getElementById('wind_speed');
-const humidity1 = document.getElementById('humidity');
-
 
 
 async function apiFetch() {
@@ -18,8 +7,8 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             // currentTemp.innerHTML = data.main.temp
-            console.log(data.list); // this is for testing the call
-            displayResults(data);
+            
+            displayResults(data.list);
         } else {
             throw Error(await response.text());
         }
@@ -30,33 +19,68 @@ async function apiFetch() {
 
 apiFetch();
 
-function displayResults(weatherData) {
-    const temp = weatherData.main.temp
-    const speed = weatherData.wind.speed
-    const humidity = weatherData.main.humidity
+function displayResults(weatherDataList) {
 
-    if (temp <= 50 && speed > 3) {
-        windChill.innerHTML = `${parseInt(getwindchill(temp, speed))} °F`
-        //const windchill = 35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t * (s ** .016));
-        //document.getElementById("wind_chill").innerText = windchill.toFixed(0)
-    }
-    else {
-        windChill.textContent = "N/A"
-        //document.getElementById("wind_chill").innerText = "N/A"
-    }
+    const weather = document.querySelector('.weather')
+    const newDay = new Date().getDay()
+    weatherDataList.forEach((data, index) => {
 
-    currentTemp.innerHTML = temp.toFixed(0);
-    windSpeed.innerHTML = speed.toFixed(0);
-    humidity1.innerHTML = humidity.toFixed(0);
+        let day;
+        if (newDay == new Date().getDay() + index) {
+            day = 'Today'
+        } else {
+            switch (new Date().getDay() + index) {
+                case 1:
+                    day = 'Monday'
+                    break
+                case 2:
+                    day = 'Tuesday'
+                    break
+                case 3:
+                    day = 'Wednesday'
+                    break
+                case 4:
+                    day = 'Thursday'
+                    break
+                case 5:
+                    day = 'Friday'
+                    break
+                case 6:
+                    day = 'Saturday'
+                    break
+                case 7:
+                    day = 'Sunday'
+                    break
+            }
+        }
 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+        const temp = data.main.temp
+        const speed = data.wind.speed
+        const humidity = data.main.humidity
+        const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        const desc = data.weather[0].description;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-}
+        const oneDayWeather = document.createElement('div')
+        const dayHTML = document.createElement('div')
+        dayHTML.innerText = day
+        const tempHTML = document.createElement('div')
+        tempHTML.innerText = `Tempeture ${temp.toFixed(0)}`;
+        const speedHTML = document.createElement('div')
+        speedHTML.innerText = `Wind Speed ${speed.toFixed(0)}`;
+        const humidityHTML = document.createElement('div')
+        humidityHTML.innerText = `Humidity ${humidity.toFixed(0)}`;
+        const weatherIcon = document.createElement('img')
+        weatherIcon.setAttribute('src', iconsrc);
+        weatherIcon.setAttribute('alt', desc);
 
-function getwindchill(temp, speed) {
-    return 35.74 + (0.6215 * temp) - (35.75 * (speed ** 0.16)) + (0.4275 * temp * (speed ** .016));
+        oneDayWeather.appendChild(dayHTML)
+        oneDayWeather.appendChild(tempHTML)
+        oneDayWeather.appendChild(tempHTML)
+        oneDayWeather.appendChild(speedHTML)
+        oneDayWeather.appendChild(humidityHTML)
+        oneDayWeather.appendChild(weatherIcon)
+
+        weather.appendChild(oneDayWeather)
+    })
+
 }

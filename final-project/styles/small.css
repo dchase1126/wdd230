@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,21 +13,23 @@ body {
   font-family: sansita, cookie, sans-serif;
 }
 
-
-
 header {
-  background-color: #226F54;
+  background-color: #08BDBD;
   padding: 10px 0px;
 }
 
 .header-first_line {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   justify-items: center;
+  justify-content: space-around;
+  padding: 0 35px 0 10px;
 }
 
 .header-first_line .logobox img {
+  display: flex;
+  margin: 10px;
   width: 100px;
   padding:5px;
   background-color: #eaf68f;
@@ -33,12 +37,16 @@ header {
 }
 
 .header-first_line .header-title h1 {
+  display: flex;
+  margin: 10px; 
   font-size: 30px;
-  padding: 25px;
 }
 
-.header-title p {
-  margin: 0;
+nav {
+  background-color: snow;
+  text-align: right;
+  opacity: 0.8;
+  display: inline;
 }
 
 #hamburgerBtn {
@@ -67,41 +75,38 @@ nav {
   z-index: 1;
 }
 
-nav {
-  background-color: snow;
-  text-align: right;
-  opacity: 0.8;
-  display: inline;
-}
-
 nav ul {
   list-style: none; /* removes the bullets! */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5em, 2fr));
   padding: 15px;
   font-size: 1em;
-}
-
-nav ul {
-  display: none;
+  margin: 0;
 }
 
 nav ul li a {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  text-align: center;
   background-color: rgb(1, 28, 30);
   display: block;
   padding: 0.8rem;
   text-decoration: none;
-  color: white;
+  color: snow;
 }
 
 nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  background-color: rgb(1, 28, 30);
+  color: snow;
 }
 
 nav ul li a:hover {
-  background-color: lightgreen;
-  color: black;
+  background-color: #ABFF4F;
+  color: rgb(1, 28, 30);
+}
+
+nav ul {
+  display: none;
 }
 
 nav ul.open {
@@ -112,9 +117,10 @@ nav ul.open {
 .media_group {
   display: flex;
   width: 100%;
-  grid-column: 1/3;
+  grid-column: 1/4;
   gap: 5px;
-  justify-content: space-between;
+  justify-content: right;
+  padding: 25px;
 }
 
 .media_group img {
@@ -136,53 +142,109 @@ nav ul.open {
   padding: 5px 0;
   width: 90%;
   font-size: 30px;
-  background-color: #eaf68f;
+  background-color: #FF9914;
   border: 5px solid rgb(1, 28, 30);
   opacity: 0.8;
   margin: auto;
 }
 
-main {
+main.home {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
   background-color: snow;
-  margin: 0 auto;
+  text-align: left;
+  word-spacing: 3px;
 }
+
+.home section.spot{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+  border-style: solid;
+  }
+
 
 main .weather {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  padding: 80px;
-  background-color: rgb(2, 57, 23);
-  color: white;
-  border-style: solid;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #eaf68f;
+  color: rgb(1, 28, 30);
+  border: 3px solid rgb(1, 28, 30);
 }
+
+main .weather h3{
+  font-size: 25px;
+  padding: 20px;
+} 
 
 main.weather #weather-icon {
   text-align: center;
   width: 70px;
 }
 
-.spot img {
-  width: 350px;
+.spot img p {
+  width: auto;
+  text-align: center;
 }
-/******************** Fresh page **********/
+
+section .hero_joinBtn {
+  position: relative;
+  margin: 15px;
+  top: 0;
+  right: 0;
+  background-color: #FF9914;
+  font-size: 15px;
+  padding: 15px 0;
+  border: 3px solid rgb(1, 28, 30);
+  text-decoration: none;
+  font-family: cursive, sansita, cookie;
+  color: rgb(1, 28, 30);
+  width: 140px;
+  float: right;
+  text-align: center;
+}
+
+.hero_joinBtn:hover {
+  background-color: #ABFF4F;
+  color: rgb(1, 28, 30);
+}
+
+
+
+/************************ Fresh page *****************/
+
+main.fresh  {
+  display: block;
+  background-color: snow;
+  margin: 0 auto;
+
+}
 .menu #gridBtn {
   align-items: center;
   justify-content: center;
   margin: 30px;
   height: 60px;
   width: 60px;
-  border: 3px solid rgb(2, 57, 23);
-  background-color: #94D08B;
+  border: 3px solid rgb(1, 28, 30);
+  background-color: #eaf68f;
 }
 
 #gridBtn:hover {
-  background-color: rgb(1, 28, 30);
-  border: 3px solid #eaf68f;
-  color: white;
+  background-color: #ABFF4F;
+  border: 3px solid rgb(2, 57, 23);
+  color: rgb(2, 57, 23);
 }
 
 .menu #listBtn {
@@ -191,33 +253,29 @@ main.weather #weather-icon {
   margin: 30px;
   height: 60px;
   width: 60px;
-  border: 3px solid rgb(2, 57, 23);
-  background-color: #94D08B;
+  border: 3px solid rgb(1, 28, 30);
+  background-color: #ABFF4F;
 }
 
 #listBtn:hover {
-  background-color: rgb(1, 28, 30);
-  border: 3px solid #eaf68f;
-  color: white;
+  background-color: #eaf68f;
+  border: 3px solid rgb(1, 28, 30);
+  color:rgb(1, 28, 30);
 }
 
 .gridLayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
+  margin: 15px;
 }
+
 .gridLayout > * {
   height: 100%;
 }
+
 .listLayout {
   grid-template-columns: minmax(200px, 1fr);
-}
-
-.listLayout > * {
-  flex-direction: row !important;
-}
-.fresh.listLayout > * img {
-  display: none;
 }
 
 .fresh .listLayout > * h2 {
@@ -259,28 +317,235 @@ menu.fresh {
   margin: 5px;
   width: 100%;
   margin: auto;
-  background-color: #87C38F;
+  background-color: #ABFF4F;
   border: 3px solid rgb(1, 28, 30);
 }
 
 .fresh section > p {
   align-items: center;
   color: rgb(1, 28, 30);
+  
 }
 
 .fresh img {
   width: auto;
   max-width: 100%;
   height: 200px;
-  border: 1px solid #006d77;
+  border: 2px solid rgb(1, 28, 30);
+ 
 }
 
 .fresh li > img {
   width: auto;
   height: 30px;
+  
 }
 
-/*End of Fresh Page*/
+.fresh h3 {
+  color: rgb(1, 28, 30);
+  width: 100%;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #eaf68f;
+  border: 3px solid rgb(1, 28, 30);
+}
+
+main.fresh form #contactInfo ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  gap: 10px;
+  padding: 5px;
+  background-color: #eaf68f;
+}
+
+main.fresh form #contactInfo ul li input {
+  padding: 15px;
+  
+}
+
+main.fresh form #contactInfo ul li #fruit1 {
+  padding: 15px;
+}
+
+main.fresh form #contactInfo ul li #fruit2 {
+  padding: 15px;
+}
+
+main.fresh form #contactInfo ul li #fruit3 {
+  padding: 15px;
+}
+
+main.fresh form #contactInfo {
+  border: 5px solid rgb(1, 28, 30);
+  padding: 10px;
+  margin: 5%;
+}
+
+main.fresh form #business ul li label {
+  padding: 10px 0;
+}
+
+main.fresh form #business {
+  margin: 15px 40px;
+  gap: 10px;
+  padding: 5px;
+  background-color: #eaf68f;
+  border: 3px solid rgb(1, 28, 30);
+}
+main.fresh form #business ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.fresh .submitBtn {
+  Margin: 40px;
+  margin-left: auto;
+  display: block;
+  background-color:#FF9914;
+  font-size: 15px;
+  padding: 15px;
+  border: 3px solid rgb(1, 28, 30);
+}
+
+.submitBtn:hover {
+  background-color: #ABFF4F;
+  color: rgb(1, 28, 30);
+}
+/**** End of Fresh Page *****/
+
+/****************************** Contact/About Us Page *************************/
+
+
+main.aboutus .contactForm ul li {
+list-style: none; /* removes the bullets! */
+
+}
+
+main.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0.5rem;
+  width: 90%;
+  background-color: white;
+  word-spacing: 3px;
+  padding: 15px;
+  color: rgb(1, 28, 30);
+}
+
+main.contact .hours {
+  align-items: center;
+  justify-content: center;
+  word-spacing: 3px;
+  padding:25px;
+  width: 100%;
+  border: 3px solid rgb(1, 28, 30);
+  color: rgb(1, 28, 30);
+}
+/*.contact .hero_joinBtn{
+  float: right;
+}*/
+
+.contact div img {
+  width: 95%;
+}
+
+main.contact section.staff { 
+  word-spacing: 3px;
+  padding: 25px;
+  width: 100%;
+  color: rgb(1, 28, 30);
+  border: 3px solid rgb(1, 28, 30);
+}
+
+main.contact .contactForm h3{
+  padding: 20px;
+}
+
+main.contact .contactForm ul li {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin: 15px;
+  gap: 5px;
+  padding: 10px;
+  background-color: #eaf68f;
+  border: 1px solid rgb(1, 28, 30);
+}
+
+main.contact ul li #contactinfo {
+  width: 100%;
+
+} 
+
+main.contact ul li #firstName {
+  padding: 10px;
+}
+
+main.contact ul li #lastName {
+  padding: 10px;
+}
+
+main.contact ul li #title {
+  padding: 10px;
+}
+
+main.contact ul li #mail{
+  padding: 10px;
+}
+
+main.contact ul li #email {
+  padding: 10px;
+}
+
+main.contact ul li #tel {
+  padding: 10px;
+}
+
+main.contact ul li #contactPreference {
+  padding: 10px;
+}
+
+main.contact ul li #descriptionTextarea {
+  padding: 10px;
+}
+
+main.contact .contactForm ul li label {
+  padding: 10px;
+}
+
+.contact .submitBtn {
+  margin: 10px;
+  background-color: #FF9914;
+  font-size: 15px;
+  padding: 15px;
+  border: 3px solid  rgb(1, 28, 30);
+} 
+
+main.contact section.map {
+  justify-content: right;
+  word-spacing: 3px;
+  color: rgb(1, 28, 30);
+  margin: 15px;
+  
+}
+
+main.contact section.map p{
+  word-spacing: 3px;
+  padding: 10px;
+  color: rgb(1, 28, 30);
+  margin: 15px;
+  border: 3px solid rgb(1, 28, 30);
+}
+
+/******* End of About Us Page ****************/
 
 footer {
   display: grid;
@@ -288,7 +553,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 0 35px 0 10px;
-  background-color: #94D08B;
+  background-color: #08BDBD;
   color: black;
   text-align: center;
   padding: 20px 0;
@@ -329,4 +594,4 @@ footer img{
 
 
 
-/********************************* About Us Page ***************************/
+

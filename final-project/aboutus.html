@@ -25,8 +25,10 @@
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
     <!--<script src="scripts/windchill.js" defer></script>-->
-    <script src="scripts/weatherapi.js" defer></script>
+    <!--<script src="scripts/weatherapi.js" defer></script>-->
 
     <title>Bountiful Foods of Carlsbad</title>
 
@@ -44,12 +46,11 @@
         <div class="header-first_line">
             <div class="logobox">
                 <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-
                 <div class="header-title">
-                    <h1></h1>
-
+                    <h1>Bountiful Foods of Carlsbad, California</h1>
                 </div>
             </div>
+
 
             <nav>
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -85,15 +86,6 @@
     </header>
 
     <main class="contact">
-        <h1><strong>Contact us</strong></h1>
-
-        <div>
-            <picture>
-                <source srcset="images/bountiful-Foods.jpg" media="(min-width: 1080px)">
-                <source srcset="images/bountiful-Foods.jpg" media="(min-width:560px)">
-                <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
-            </picture>
-        </div>
 
         <section class="hours">
             <h2>Bountiful Foods</h2>
@@ -108,29 +100,53 @@
                 Monday - Friday: 9:00 am - 5:00 pm <br>
                 Saturday: Closed <br>
                 Sunday: Closed
-                <a class="hero_joinBtn" href="fresh.html">See Produce</a>
+
             </div>
         </section>
 
         <div>
             <picture>
-                <source srcset="images/Carlsbad-Map.jpg" media="(min-width: 1080px)">
-                <source srcset="images/Carlsbad-Map.jpg" media="(min-width:560px)">
-                <img src="images/Carlsbad-Map.jpg" alt="Map of Carlsbad">
+                <source srcset="images/bountiful-Foods.jpg" media="(min-width: 1080px)">
+                <source srcset="images/bountiful-Foods.jpg" media="(min-width:560px)">
+                <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
             </picture>
-            <p>Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach,
-                backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach.
-                The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium.
-                The Flower Fields is a seasonal attraction, with acres of flowers. Set in a canyon,
-                the Leo Carrillo Ranch Historic Park is home to free-roaming peacocks. </p>
+
         </div>
+
+        <section class="staff">
+            <H3><strong>Points of Contact</strong></H3>
+
+            <div>
+                <p><strong>Steve Hunter</strong> -
+                    Chief Executive Officer -
+                    (760)-524-1010 Option 1 -
+                    ceo@BountifulFoods.com</p>
+            </div>
+            <div>
+                <p><strong>Michelle Covert</strong> -
+                    Business Operations Manager -
+                    (760)-524-1010 Option 2 -
+                    officemgr@BountifulFoods.com</p>
+            </div>
+            <div>
+                <p><strong>Jen Emery</strong> -
+                    Food Truck Manager -
+                    (760)-524-1010 Option 3 -
+                    truckinfo@BountifulFoods.com</p>
+            </div>
+            <div>
+                <p><strong>Larissa Hale</strong> -
+                    Marketing and Communications Coordinator -
+                    (760)-524-1010 Option 4 -
+                    marketing@BountifulFoods.com</p>
+            </div>
+        </section>
 
         <form>
 
             <section class="contactForm">
                 <h3><strong>Send us your questions or comments using the form below. We will respond promptly to your
-                        inquiry.
-                    </strong></h3>
+                        inquiry.</strong></h3>
 
                 <fieldset id="contactInfo">
 
@@ -145,11 +161,6 @@
                         <li>
                             <label for="lastName">Last Name*</label>
                             <input type="text" id="lastName" name="lastName" required>
-                        </li>
-
-                        <li>
-                            <label for="title">Company Name*</label>
-                            <input type="text" id="title" name="title" pattern="[A-Za-z]{1,20}">
                         </li>
 
                         <li>
@@ -192,37 +203,36 @@
                     <button type="submit" class="submitBtn"> contact us </button>
 
                 </fieldset>
-            </section>
+        
+        </section>
+    </form>
+        <div class="map">
+            <h2></h2>
+            <div>
+                <p>Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach,
+                    backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach.
+                    The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium.
+                    The Flower Fields is a seasonal attraction, with acres of flowers. Set in a canyon,
+                    the Leo Carrillo Ranch Historic Park is home to free-roaming peacocks. </p>
+            </div>
 
-            <section class="staff">
-                <H3><strong>Points of Contact</strong></H3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88478052888!2d-117.35801350498429!3d33.12149986299404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1680361852174!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
-                <div>
-                    <p><strong>Steve Hunter</strong> -
-                        Chief Executive Officer -
-                        (760)-524-1010 Option 1 -
-                        ceo@BountifulFoods.com</p>
-                </div>
-                <div>
-                    <p><strong>Michelle Covert</strong> -
-                        Business Operations Manager -
-                        (760)-524-1010 Option 2 -
-                        officemgr@BountifulFoods.com</p>
-                </div>
-                <div>
-                    <p><strong>Jen Emery</strong> -
-                        Food Truck Manager -
-                        (760)-524-1010 Option 3 -
-                        truckinfo@BountifulFoods.com</p>
-                </div>
-                <div>
-                    <p><strong>Larissa Hale</strong> -
-                        Marketing and Communications Coordinator -
-                        (760)-524-1010 Option 4 -
-                        marketing@BountifulFoods.com</p>
-                </div>
-            </section>
-        </form>
+        </div>
+       
+        <div>
+            <picture>
+                <source srcset="images/Organic-Food-450-opt.jpg" media="(min-width: 1080px)"loading="lazy">
+                <source srcset="images/Organic-Food-450-opt.jpg" media="(min-width:560px)"loading="lazy">
+                <img src="images/Organic-Food-450-opt.jpg" alt="Bountiful Foods"loading="lazy">
+            </picture>
+
+            <p>We support healthy eating, organic bounty, and convenience.</p>
+        </div>
 
     </main>
 

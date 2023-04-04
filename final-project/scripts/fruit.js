@@ -5,9 +5,27 @@ async function getFruitData() {
     const data = await response.json();
     console.log(data);  // note that we reference the company array of the data object given the structure of the json file
     displayFruit(data);
+    generateOptions(data)
 }
 
 getFruitData();
+
+const generateOptions = (fruitsData) => {
+    const fruit1 = document.getElementById("fruit1")
+    const fruit2 = document.getElementById("fruit2")
+    const fruit3 = document.getElementById("fruit3")
+
+    const fruitArray = [fruit1, fruit2, fruit3]
+
+    fruitArray.forEach(fruit => {
+        fruitsData.forEach(fruitData => {
+            let option = document.createElement('option')
+            option.value = fruitData.name
+            option.innerText = fruitData.name
+            fruit.appendChild(option)
+        })
+    })
+}
 
 const displayFruit = (fruits) => {
     const cards = document.querySelector('div#cards'); // select the output container element
@@ -31,7 +49,7 @@ const displayFruit = (fruits) => {
         genus.textContent = `genus: ${fruit.genus}`;
         family.textContent = `family: ${fruit.family}`;
         order.textContent = `order: ${fruit.order}`;
-       
+
 
         // const nutritionsList
         carbohydrates.textContent = `carbohydrates: ${fruit.nutritions.carbohydrates}`;
