@@ -35,52 +35,42 @@ const displayFruit = (fruits) => {
         let card = document.createElement('section');
         let portrait = document.createElement('img');
         let name = document.createElement('h2');
-        let genus = document.createElement('p');
-        let family = document.createElement('p');
-        let order = document.createElement('p');
         let carbohydrates = document.createElement('p');
         let protein = document.createElement('p');
         let fat = document.createElement('p');
         let calories = document.createElement('p');
         let sugar = document.createElement('p');
 
-        // Build the h2 content out to show the fruit's full name - finish the template string
-        name.textContent = `name: ${fruit.name} `;
-        genus.textContent = `genus: ${fruit.genus}`;
-        family.textContent = `family: ${fruit.family}`;
-        order.textContent = `order: ${fruit.order}`;
-
-
-        // const nutritionsList
-        carbohydrates.textContent = `carbohydrates: ${fruit.nutritions.carbohydrates}`;
-        protein.textContent = `protein: ${fruit.nutritions.protein}`;
-        fat.textContent = `fat: ${fruit.nutritions.fat}`;
-        calories.textContent = `calories: ${fruit.nutritions.calories}`;
-        sugar.textContent = `sugar: ${fruit.nutritions.sugar}`;
-
-        // Build the image portrait by setting all the relevant attribute
-        portrait.setAttribute('src', fruit.imageurl);
-        portrait.setAttribute('alt', `Portait of ${fruit.name} `);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
-
-
-        // Append the section(card) with the created elements
-        card.appendChild(name);
-        card.appendChild(portrait);
-        card.appendChild(genus);
-        card.appendChild(family);
-        card.appendChild(order);
-        card.appendChild(carbohydrates);
-        card.appendChild(protein);
-        card.appendChild(fat);
-        card.appendChild(calories);
-        card.appendChild(sugar);
-
-        cards.appendChild(card);
-    }); // end of forEach loop
-}// end of function expression
+          // Build the h2 content out to show the fruit's full name - finish the template string
+          name.textContent = `name: ${fruit.name} `;
+  
+          // const nutritionsList
+          carbohydrates.textContent = `carbohydrates: ${fruit.nutritions.carbohydrates}`;
+          protein.textContent = `protein: ${fruit.nutritions.protein}`;
+          fat.textContent = `fat: ${fruit.nutritions.fat}`;
+          calories.textContent = `calories: ${fruit.nutritions.calories}`;
+          sugar.textContent = `sugar: ${fruit.nutritions.sugar}`;
+  
+          // Build the image portrait by setting all the relevant attribute
+          portrait.setAttribute('src', fruit.imageurl);
+          portrait.setAttribute('alt', `Portait of ${fruit.name} `);
+          portrait.setAttribute('loading', 'lazy');
+          portrait.setAttribute('width', '340');
+          portrait.setAttribute('height', '440');
+  
+  
+          // Append the section(card) with the created elements
+          card.appendChild(name);
+          card.appendChild(portrait);
+          card.appendChild(carbohydrates);
+          card.appendChild(protein);
+          card.appendChild(fat);
+          card.appendChild(calories);
+          card.appendChild(sugar);
+  
+          cards.appendChild(card);
+      }); // end of forEach loop
+  }// end of function expression
 
 const gridBtn = document.getElementById("gridBtn")
 const cards = document.getElementById("cards")

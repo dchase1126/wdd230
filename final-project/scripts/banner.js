@@ -5,7 +5,7 @@ let currentDay = new Date().getDay();
 
 //if the day is Monday or Tuesday
 //ternary
-document.getElementById('banner').style.display = (currentDay == 1 || currentDay == 5) ? "block" : "none";
+document.getElementById('banner').style.display = (currentDay == 1 || currentDay == 4) ? "block" : "none";
 
 //const is21 = true
 //const isInUS = false

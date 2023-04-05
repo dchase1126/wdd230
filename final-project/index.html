@@ -24,7 +24,6 @@
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
-    <!--<script src="scripts/windchill.js" defer></script>-->
     <script src="scripts/weatherapi2.js" defer></script>
     <script src="scripts/lazyload.js" defer></script>
     <script src="scripts/visits.js" defer></script>
@@ -82,7 +81,7 @@
         <section class=" spot1">
             <h2>Welcome to Bountiful Foods</h2>
 
-            <img src="images/food-truck3.webp" alt="Bountiful Foods">
+            <img src="images/food-truck3.webp" alt="Bountiful Foods Truck">
 
             <p>Bountiful Foods is small business specializing in organic, locally grown foods.<br>
                 We are physically located in Carlsbad, California, however, we have many
@@ -95,68 +94,52 @@
         <section class="spot2">
             <h2> Carlsbad, California</h2>
 
-            <img src="images/carlsbad-sign.jpg" alt="Bountiful Foods">
+            <img src="images/carlsbad-sign.jpg" alt="Carlsbad Sign">
 
             <p>
-                We are a owner-operated company that caters to walk in traffic at our storefront in Carlsbad and,
-                of course, we have many food trucks. We deliver and manage orders on the phone and via the website.
-                
+                Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach,
+                backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach. The Legoland
+                California theme park includes rides, a water park and the SEA LIFE Aquarium. The Flower
+                Fields is a seasonal attraction, with acres of flowers. Set in a canyon, the Leo
+                Carrillo Ranch Historic Park is home to free-roaming peacocks.
             </p>
-           
+
             <a class="hero_joinBtn" href="aboutus.html">Contact Us</a>
         </section>
 
         <section class="weather">
+
             <h3>Carlsbad Weather</h3>
-
-        
-            <!-- <h2><strong>Carlsbad Weather</strong></h2> -->
-            <!-- Code from ealier lessons
-        <img src="images/sun_cloud_weather-icon.webp" alt="weather">
-        <p><span id="temp"></span> degrees Celcius</p>
-        <p>Partly Cloudy</p>
-        <p><span>Wind Speed </span><span id='wind_speed'></span></p>
-        <p><span>wind Chill </span><span id='wind_chill'></span></p>  -->
-            <!-- <p>Current Temperature <strong id="current-temp"></strong> &deg;F</p>
-            <br>
-            <strong>Current Condition</strong>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-            <img src="https://picsum.photos/300/400" alt="weather placeholder" id="weather-icon">
-
-            <p>Wind Speed is <strong id="wind_speed"></strong> mph</p>
-            <p>Wind Chill is <strong id="wind-chill"></strong></p>
-            <p>Humidity is <strong id="humidity"></strong></p>
-            <p>3 day forecast is </p> -->
 
         </section>
 
-        <section class="photos">
-            
-                <h2>Let's start making your next refreshing drink! </h2>
-            
+        <section class="blender">
+
+            <h2>Let us make your next refreshing drink! </h2>
+            <div>
                 <picture id="img1">
-                  <source srcset="images/blender-pict.jpg" media="(min-width: 1080px)">
+                    <source srcset="images/blender-pict.jpg" media="(min-width: 1080px)">
                     <source srcset="images/blender-pict.jpg" media="(min-width:560px)">
                     <img src="images/blender-pict.jpg" alt="Bountiful Foods">
                 </picture>
-            
+            </div>
+            <p>Enjoy our refreshing fruit drinks available at our store front in Carlsbad or at one of our many food
+                trucks.</p>
             <p>We offer a variety of healthy and fresh organic produce to create a refreshing fruit drink for hot days
                 at your convenience.</p>
-                <p>Enjoy our refreshing fruit drinks available at our store front in Carlsbad or at one of our many food
-                    trucks.</p>
-                    <a class="hero_joinBtn" href="aboutus.html">Order Now</a>
+            
+            <a class="hero_joinBtn" href="fresh.html">Order Now</a>
         </section>
 
         <section class="visits">
             <h2>Be part of something fresh and amazing!</h2>
-            <picture id="img3">
-                <img src="images/fruit-drink-enjoyment.jpg" alt="Bountiful Foods" loading="lazy">
-            </picture>
-
+            <div>
+                <picture id="img3">
+                    <img src="images/fruit-drink-enjoyment.jpg" alt="Bountiful Foods" loading="lazy">
+                </picture>
+            </div>
             <div id="numvisits">
-                <p><span class="label">Number of Visitors: </span><span id="lastVisit"></span></p>
+                <p><span class="label">Number of Visits: </span><span id="lastVisit"></span></p>
                 <p><span class="label">Number of orders: </span><span id="numberVisit"></span></p>
             </div>
 
@@ -166,11 +149,11 @@
             <h2> Mission Statement</h2><br>
             <p>Our mission is to provide fresh and healthy food options, including organic, made to order,
                 fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas.</p>
-           
-                <picture id="img2">
-                    <img src="images/drinks.jpg" alt="Bountiful Foods">
-                </picture>
 
+            <picture id="img2">
+                <img src="images/drinks.jpg" alt="Bountiful Foods">
+            </picture>
+        
         </section>
 
     </main>

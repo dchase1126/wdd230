@@ -176,6 +176,7 @@ main.home section.spot1 h2 {
 main.home section.spot1 p {
   padding: 10px;
   word-spacing: 3px;
+  font-size: 18px;
 }
 
 main.home section.spot2 {
@@ -194,8 +195,9 @@ main.home section.spot2 h2 {
 main.home section.spot2 p {
   padding: 10px;
   word-spacing: 3px;
+  font-size: 18px;
 }
-main .weather {
+main.home .weather {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -208,17 +210,17 @@ main .weather {
   border: 4px solid rgb(1, 28, 30);
 }
 
-main.weather h3 {
-  font-size: 30px;
+main.home .weather h3 {
+  font-size: 40px;
   padding: 20px;
 }
 
-main.weather #weather-icon {
+main.home .weather #weather-icon {
   text-align: center;
   width: 70px;
 }
 
-main.home section.photos {
+main.home section.blender {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -227,21 +229,22 @@ main.home section.photos {
   padding: 10px;
 }
 
-main.home section.photos h2 {
+main.home section.blender h2 {
   text-align: center;
   padding: 10px;
   
 }
 
-.home section.photos #img1 {
+.home section.blender div picture #img1 {
+  width: 80%;
   margin: 20px;
   padding: 10px;
 }
 
-main.home section.photos p {
+main.home section.blender p {
   width: auto;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
 }
 
@@ -254,7 +257,7 @@ main.home .mission h2 {
 }
 
 main.home .mission #img2 {
-  margin: 30px;
+  margin: 50px;
   padding: 22px;
 }
 
@@ -500,6 +503,24 @@ main.fresh form #business ul li {
 }
 /**** End of Fresh Page *****/
 
+/*Thank You Page*/
+
+main.thankYou {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: 10px solid rgb(1, 28, 30);
+  padding: 0.5rem;
+  width: 90%;
+  background-color: #ff9914;
+  font-size: 25px;
+}
+
+/* end of Thank You page*/
+
 /****************************** Contact/About Us Page *************************/
 
 main.aboutus .contactForm ul li {
@@ -520,6 +541,7 @@ main.contact {
 
 main.contact .hours {
   word-spacing: 3px;
+  font-size: 18px;
   padding: 25px;
   width: 100%;
   border: 3px solid rgb(1, 28, 30);
@@ -617,6 +639,7 @@ main.contact .map h2 {
 
 main.contact .map p {
   word-spacing: 3px;
+  font-size: 18px;
   padding: 10px;
   color: rgb(1, 28, 30);
   margin: 15px;
@@ -662,6 +685,7 @@ footer {
   background-color: #08bdbd;
   color: black;
   text-align: center;
+  font-size: 18px;
   padding: 20px 0;
 }
 
