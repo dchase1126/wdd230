@@ -116,7 +116,7 @@ nav ul.open {
   display: flex;
   width: 100%;
   grid-column: 1/4;
-  gap: 5px;
+  gap: 10px;
   justify-content: right;
   padding: 25px;
 }
@@ -145,44 +145,71 @@ nav ul.open {
   opacity: 0.8;
   margin: auto;
 }
-
+/********************** HOME PAGE ****************/
 main.home {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5px;
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 0.5rem;
   width: 90%;
-  background-color: snow;
+  background-color: white;
   text-align: left;
   word-spacing: 3px;
+  color: rgb(1, 28, 30);
 }
 
-.home section.spot {
+main.home section.spot1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   word-spacing: 3px;
-  padding: 15px;
-  color: rgb(1, 28, 30);
-  border-style: solid;
+  padding: 10px;
+  
 }
 
+main.home section.spot1 h2 {
+  padding: 15px;
+}
+
+main.home section.spot1 p {
+  padding: 10px;
+  word-spacing: 3px;
+}
+
+main.home section.spot2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 10px;
+ 
+}
+main.home section.spot2 h2 {
+  padding: 15px;
+}
+
+main.home section.spot2 p {
+  padding: 10px;
+  word-spacing: 3px;
+}
 main .weather {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  margin: 20px;
   font-size: 18px;
   padding: 10px;
-  background-color: #eaf68f;
+  background-color: #08bdbd;
   color: rgb(1, 28, 30);
-  border: 3px solid rgb(1, 28, 30);
+  border: 4px solid rgb(1, 28, 30);
 }
 
-main .weather h3 {
-  font-size: 25px;
+main.weather h3 {
+  font-size: 30px;
   padding: 20px;
 }
 
@@ -191,9 +218,71 @@ main.weather #weather-icon {
   width: 70px;
 }
 
-.spot img p {
+main.home section.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 10px;
+}
+
+main.home section.photos h2 {
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.home section.photos #img1 {
+  margin: 20px;
+  padding: 10px;
+}
+
+main.home section.photos p {
+  width: auto;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+}
+
+main.home .mission {
+  border: 5px solid rgb(1, 28, 30);
+}
+
+main.home .mission h2 {
+  padding: 15px;
+}
+
+main.home .mission #img2 {
+  margin: 30px;
+  padding: 22px;
+}
+
+main.home .mission p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+main.home .visits {
+  border: 5px solid rgb(1, 28, 30);
+}
+
+main.home .visits #img3 {
+  margin: 50px;
+  padding: 20px;
+}
+
+main.home .visits h2 {
   width: auto;
   text-align: center;
+  padding: 20px;
+}
+
+main.home .visits p {
+  width: auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
 }
 
 section .hero_joinBtn {
@@ -209,7 +298,7 @@ section .hero_joinBtn {
   font-family: cursive, sansita, cookie;
   color: rgb(1, 28, 30);
   width: 140px;
-  float: right;
+  float: left;
   text-align: center;
 }
 
@@ -324,7 +413,7 @@ menu.fresh {
   width: auto;
   max-width: 100%;
   height: 200px;
-  border: 2px solid rgb(1, 28, 30);
+  padding: 10px;
 }
 
 .fresh li > img {
@@ -375,6 +464,9 @@ main.fresh form #contactInfo {
   margin: 5%;
 }
 
+main.fresh form {
+  margin: 10px;
+}
 main.fresh form #business ul li label {
   padding: 10px 0;
 }
@@ -445,15 +537,8 @@ main.contact .hours {
   width: 100%;
 }
 
-main.contact section.staff {
-  word-spacing: 3px;
-  padding: 25px;
-  width: 100%;
-  color: rgb(1, 28, 30);
-  border: 3px solid rgb(1, 28, 30);
-}
-
 main.contact .contactForm h3 {
+  font-size: 30px;
   padding: 20px;
 }
 
@@ -517,18 +602,55 @@ main.contact .contactForm ul li label {
 }
 
 main.contact iframe {
+  padding: 15px;
   width: 100%;
   height: 250px;
 }
 
-main.contact section.map p {
+main.contact .map h2 {
+  word-spacing: 3px;
+  font-size: 30px;
+  padding: 5px;
+  color: rgb(1, 28, 30);
+  margin: 10px;
+}
+
+main.contact .map p {
   word-spacing: 3px;
   padding: 10px;
   color: rgb(1, 28, 30);
   margin: 15px;
-  border: 3px solid rgb(1, 28, 30);
 }
 
+main.contact .bounty h2 {
+  word-spacing: 3px;
+  font-size: 32px;
+  padding: 20px;
+  color: rgb(1, 28, 30);
+  margin: 15px;
+  border: 3px solid rgb(1, 28, 30);
+  background-color: #abff4f;
+}
+
+main.contact .bounty {
+  word-spacing: 3px;
+  font-size: 25px;
+  justify-content: center;
+  padding: 10px;
+  color: rgb(1, 28, 30);
+  margin: 10px;
+  gap: 15px;
+}
+
+main.contact .bounty picture #fruitsack {
+  margin: 10px;
+  padding: 12px;
+}
+
+main.contact .bounty picture #fruitassort {
+  margin: 10px;
+  padding: 2px;
+}
 /******* End of About Us Page ****************/
 
 footer {

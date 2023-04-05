@@ -1,4 +1,4 @@
-const url = `https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&cnt=3&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&cnt=5&units=imperial&appid=bb0d26cfb4b9fcb67962970ac716e90b`
 
 
 async function apiFetch() {
