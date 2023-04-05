@@ -1,0 +1,37 @@
+<section class="staff">
+        <h3><strong>Points of Contact</strong></h3>
+
+        <div>
+          <p>
+            <strong>Steve Hunter</strong> - Chief Executive Officer - (760)-524-1010 Option 1 -
+            ceo@BountifulFoods.com
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Michelle Covert</strong> - Business Operations Manager - (760)-524-1010 Option 2
+            - officemgr@BountifulFoods.com
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Jen Emery</strong> - Food Truck Manager - (760)-524-1010 Option 3 -
+            truckinfo@BountifulFoods.com
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Larissa Hale</strong> - Marketing and Communications Coordinator -
+            (760)-524-1010 Option 4 - marketing@BountifulFoods.com
+          </p>
+        </div>
+      </section>
+
+
+main.contact section.staff {
+  word-spacing: 3px;
+  padding: 25px;
+  width: 100%;
+  color: rgb(1, 28, 30);
+  border: 3px solid rgb(1, 28, 30);
+}
