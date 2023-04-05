@@ -91,6 +91,7 @@ listBtn.addEventListener('click', () => {
   cards.classList.add('listLayout');
 });
 
+// create an event handler to add the order confirmation to the DOM.
 const form = document.getElementById('fruitOrderForm');
 
 form.addEventListener('submit', (e) => {
