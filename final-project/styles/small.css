@@ -166,7 +166,6 @@ main.home section.spot1 {
   text-align: left;
   word-spacing: 3px;
   padding: 10px;
-  
 }
 
 main.home section.spot1 h2 {
@@ -186,7 +185,6 @@ main.home section.spot2 {
   text-align: left;
   word-spacing: 3px;
   padding: 10px;
- 
 }
 main.home section.spot2 h2 {
   padding: 15px;
@@ -232,13 +230,10 @@ main.home section.blender {
 main.home section.blender h2 {
   text-align: center;
   padding: 10px;
-  
 }
 
-.home section.blender div picture #img1 {
-  width: 80%;
-  margin: 20px;
-  padding: 10px;
+.home section.blender div img {
+  width: 100%;
 }
 
 main.home section.blender p {
