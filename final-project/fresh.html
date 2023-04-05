@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
+                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego." />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
-                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
+    <link rel="icon" href="images/favicon.icon" />
 
-    <link rel="icon" href="images/favicon.icon">
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap"
+      rel="stylesheet" />
 
     <script src="scripts/displayMenu.js" defer></script>
     <script src="scripts/todaysdate.js" defer></script>
@@ -26,177 +27,175 @@
     <script src="scripts/banner.js" defer></script>
     <script src="scripts/fruit.js" defer></script>
     <script src="scripts/lazyload.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
 
     <title>Bountiful Foods of Carlsbad</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
+      <div class="banner">
+        <p id="banner">
+          "🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday
+          at 7:00 p.m."
+        </p>
+      </div>
+      <div class="header-first_line">
+        <div class="logobox">
+          <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo" /></a>
 
-        <div class="banner">
-            <p id="banner">"🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday at
-                7:00 p.m."</p>
-        </div>
-        <div class="header-first_line">
-            <div class="logobox">
-                <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-
-                <div class="header-title">
-                    <h1>Bountiful Foods of Carlsbad, California</h1>
-                </div>
-
-            </div>
-
-            <nav>
-                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-                <ul id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="fresh.html">fresh</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                </ul>
-            </nav>
-
-            <div class="media_group">
-
-                <span><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
-                            alt="facebook"></a></span>
-
-                <span><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.jpg"
-                            alt="instagram"></a></span>
-
-                <span><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"
-                            alt="linkedin"></a></span>
-
-                <span><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
-                            alt="linkedin"></a></span>
-            </div>
+          <div class="header-title">
+            <h1>Bountiful Foods of Carlsbad, California</h1>
+          </div>
         </div>
 
-        <div id="currentDate"></div>
+        <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">fresh</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </nav>
 
+        <div class="media_group">
+          <span
+            ><a href="https://www.facebook.com" target="_blank"
+              ><img src="images/facebook.png" alt="facebook" /></a
+          ></span>
+
+          <span
+            ><a href="https://www.instagram.com" target="_blank"
+              ><img src="images/instagram.jpg" alt="instagram" /></a
+          ></span>
+
+          <span
+            ><a href="https://www.linkedin.com" target="_blank"
+              ><img src="images/linkedin.png" alt="linkedin" /></a
+          ></span>
+
+          <span
+            ><a href="https://www.twitter.com" target="_blank"
+              ><img src="images/twitter.png" alt="linkedin" /></a
+          ></span>
+        </div>
+      </div>
+
+      <div id="currentDate"></div>
     </header>
 
     <main class="fresh">
+      <section>
+        <h2>Fruit Facts and Ordering</h2>
+      </section>
 
+      <div class="menu">
+        <button id="gridBtn">⏹️Grid</button>
+        <button id="listBtn">📄List</button>
+      </div>
+
+      <div id="cards" class="gridLayout"></div>
+
+      <form id="fruitOrderForm">
         <section>
-            <h2>Fruit Facts and Ordering </h2>
+          <h3>Create Your Drink</h3>
+          <fieldset id="contactInfo">
+            <legend>Customer Information</legend>
+            <ul>
+              <li>
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </li>
+
+              <li>
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </li>
+
+              <li>
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="user@email.com" required />
+              </li>
+
+              <li>
+                <label for="tel">Cell Phone*</label>
+                <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required />
+              </li>
+
+              <li>
+                <label for="fruit1"> Fruit 1*</label>
+                <select id="fruit1" name="fruit1">
+                  <option value="">Please Select a fruit</option>
+                </select>
+              </li>
+
+              <li>
+                <label for="fruit2">Fruit 2*</label>
+                <select id="fruit2" name="fruit2">
+                  <option value="">Please Select a fruit</option>
+                </select>
+              </li>
+
+              <li>
+                <label for="fruit3">Fruit 3*</label>
+                <select id="fruit3" name="fruit3">
+                  <option value="">Please Select a fruit</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset id="business">
+            <legend>Special Instructions</legend>
+
+            <ul>
+              <li>
+                <label for="descriptionTextarea">Drink Instructions*</label>
+                <textarea
+                  id="descriptionTextarea"
+                  name="descriptionTextarea"
+                  rows="4"
+                  placeholder="Briefly describe how you want your drink."
+                  required></textarea>
+              </li>
+            </ul>
+          </fieldset>
+
+          <input type="hidden" id="crntdaytime" />
+
+          <button class="submitBtn">Place Order</button>
         </section>
-
-
-
-        <div class="menu">
-            <button id="gridBtn">⏹️Grid</button>
-            <button id="listBtn">📄List</button>
-        </div>
-
-        <div id="cards" class="gridLayout"></div>
-
-         <form action="thankyou.html"> 
-        <form>
-
-            <section>
-                <h3>Create Your Drink</h3>
-                <fieldset id="contactInfo">
-
-                    <legend>Customer Information</legend>
-                    <ul>
-
-                        <li>
-                            <label for="firstName">First Name*</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </li>
-
-                        <li>
-                            <label for="lastName">Last Name*</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </li>
-
-                        <li>
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" placeholder="user@email.com" required>
-                        </li>
-
-                        <li>
-                            <label for="tel">Cell Phone*</label>
-                            <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
-                        </li>
-
-                        <li>
-                            <label for="fruit1"> Fruit 1*</label>
-                            <select id="fruit1" name="fruit1">
-                                <option value="">Please Select a fruit</option>
-                            </select>
-                        </li>
-
-                        <li>
-                            <label for="fruit2">Fruit 2*</label>
-                            <select id="fruit2" name="fruit2">
-                                <option value="">Please Select a fruit</option>
-                            </select>
-                        </li>
-
-                        <li>
-                            <label for="fruit3">Fruit 3*</label>
-                            <select id="fruit3" name="fruit3">
-                                <option value="">Please Select a fruit</option>
-                            </select>
-                        </li>
-
-                    </ul>
-                </fieldset>
-
-                <fieldset id="business">
-
-                    <legend>Special Instructions</legend>
-
-                    <ul>
-                        <li>
-                            <label for="descriptionTextarea">Drink Instructions*</label>
-                            <textarea id="descriptionTextarea" name="descriptionTextarea" rows="4"
-                                placeholder="Briefly describe how you want your drink." required></textarea>
-                        </li>
-                    </ul>
-                </fieldset>
-
-                <input type="hidden" id="crntdaytime">
-
-                <button type="submit" class="submitBtn" >Place Order</button>
-            </section>
-        </form>
-
+      </form>
+      <section id="orderConfirmation"></section>
     </main>
 
     <footer>
-
-        <div>
-            <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-            <div id="address">
-                <P>Bountiful Foods</P>
-                <p>365 Oceanside Rd, Carlsbad, California 92054 </p>
-            </div>
+      <div>
+        <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo" /></a>
+        <div id="address">
+          <p>Bountiful Foods</p>
+          <p>365 Oceanside Rd, Carlsbad, California 92054</p>
         </div>
+      </div>
 
-        <div>
-            <p>
-                &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 - Final Project
-            </p>
+      <div>
+        <p>
+          &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 -
+          Final Project
+        </p>
 
-            <div id="lastModified"></div>
-        </div>
-        <div id="webaddress">
-            <p>http://www.BountifulFoods.com</p>
-            <p>(760) 524-3570</p>
+        <div id="lastModified"></div>
+      </div>
+      <div id="webaddress">
+        <p>http://www.BountifulFoods.com</p>
+        <p>(760) 524-3570</p>
 
-            <a
-                href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">
-                location map</a> <br>
-            <a href="https://openweathermap.org"> open weather map </a>
-        </div>
+        <a
+          href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">
+          location map</a
+        >
+        <br />
+        <a href="https://openweathermap.org"> open weather map </a>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -1,250 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
+                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego." />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Bountiful Foods is where people come to relax and enjoy fresh, organic,
-                 produce, along with refreshing made to order fruit drinks along the coastal area from Los Angeles to San Diego.">
+    <link rel="icon" href="images/favicon.icon" />
 
-    <link rel="icon" href="images/favicon.icon">
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Sansita&display=swap"
+      rel="stylesheet" />
 
     <script src="scripts/displayMenu.js" defer></script>
     <script src="scripts/todaysdate.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/banner.js" defer></script>
     <script src="scripts/lazyload.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
-    <!--<script src="scripts/windchill.js" defer></script>-->
-    <!--<script src="scripts/weatherapi.js" defer></script>-->
 
     <title>Bountiful Foods of Carlsbad</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="banner">
-            <p id="banner">
-                "🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday
-                at 7:00 p.m."
-            </p>
-        </div>
-        <div class="header-first_line">
-            <div class="logobox">
-                <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-                <div class="header-title">
-                    <h1>Bountiful Foods of Carlsbad, California</h1>
-                </div>
-            </div>
-
-            <nav>
-                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-                <ul id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="fresh.html">fresh</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                </ul>
-            </nav>
-
-            <div class="media_group">
-                <span><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
-                            alt="facebook"></a></span>
-
-                <span><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.jpg"
-                            alt="instagram"></a></span>
-
-                <span><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"
-                            alt="linkedin"></a></span>
-
-                <span><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
-                            alt="linkedin"></a></span>
-            </div>
+      <div class="banner">
+        <p id="banner">
+          "🥤🍓🍌 "Come join us at our Fresh Produce and Fruit Drinks truck in San Diego Wednesday
+          at 7:00 p.m."
+        </p>
+      </div>
+      <div class="header-first_line">
+        <div class="logobox">
+          <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo" /></a>
+          <div class="header-title">
+            <h1>Bountiful Foods of Carlsbad, California</h1>
+          </div>
         </div>
 
-        <div id="currentDate"></div>
+        <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">fresh</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="media_group">
+          <span
+            ><a href="https://www.facebook.com" target="_blank"
+              ><img src="images/facebook.png" alt="facebook" /></a
+          ></span>
+
+          <span
+            ><a href="https://www.instagram.com" target="_blank"
+              ><img src="images/instagram.jpg" alt="instagram" /></a
+          ></span>
+
+          <span
+            ><a href="https://www.linkedin.com" target="_blank"
+              ><img src="images/linkedin.png" alt="linkedin" /></a
+          ></span>
+
+          <span
+            ><a href="https://www.twitter.com" target="_blank"
+              ><img src="images/twitter.png" alt="linkedin" /></a
+          ></span>
+        </div>
+      </div>
+
+      <div id="currentDate"></div>
     </header>
 
     <main class="contact">
-
-        <section class="bounty">
-
-            <h2>We support healthy eating, organic bounty, and convenience.</h2>
-            <picture id="fruitassort">
-                <!--<source srcset="images/bountiful-Foods.jpg" media="(min-width: 1080px)" />
+      <section class="bounty">
+        <h2>We support healthy eating, organic bounty, and convenience.</h2>
+        <picture id="fruitassort">
+          <!--<source srcset="images/bountiful-Foods.jpg" media="(min-width: 1080px)" />
               <source srcset="images/bountiful-Foods.jpg" media="(min-width:560px)" /> -->
                 <img src="images/bountiful-Foods.jpg" alt="Bountiful Foods">
             </picture>
             <div>
                 
                 <picture id="fruitsack">
-                    <img src="images/Organic-Food-450-opt.jpg" alt="Person Holding Bag of Produce" loading="lazy">
+                    <img src="images/Organic-Food-450-opt.jpg" alt="Bountiful Foods" loading="lazy">
                 </picture>
             </div>
         </section>
 
-        <form>
-            <section class="contactForm">
-                <h3>
-                    <strong>Send us your questions or comments using the form below. We will respond promptly to
-                        your inquiry.</strong>
-                </h3>
+      <form>
+        <section class="contactForm">
+          <h3>
+            <strong
+              >Send us your questions or comments using the form below. We will respond promptly to
+              your inquiry.</strong
+            >
+          </h3>
 
-                <fieldset id="contactInfo">
-                    <legend>Customer Information</legend>
+          <fieldset id="contactInfo">
+            <legend>Customer Information</legend>
 
-                    <ul>
-                        <li>
-                            <label for="firstName">First Name*</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </li>
+            <ul>
+              <li>
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </li>
 
-                        <li>
-                            <label for="lastName">Last Name*</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </li>
+              <li>
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </li>
 
-                        <li>
-                            <label for="mail">Mailing Address*</label>
-                            <input type="text" id="mail" name="mail" placeholder="Mailing Address" required>
-                        </li>
+              <li>
+                <label for="mail">Mailing Address*</label>
+                <input type="text" id="mail" name="mail" placeholder="Mailing Address" required />
+              </li>
 
-                        <li>
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" placeholder="user@email.com" required>
-                        </li>
+              <li>
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="user@email.com" required />
+              </li>
 
-                        <li>
-                            <label for="tel">Cell Phone*</label>
-                            <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required>
-                        </li>
+              <li>
+                <label for="tel">Cell Phone*</label>
+                <input type="tel" id="tel" name="tel" placeholder="(###) ### - ####" required />
+              </li>
 
-                        <li>
-                            <label for="contactPreference">Contact Preference*</label>
-                            <input type="text" id="contactPreference" name="contactPreference"
-                                placeholder="phone, email, mail" required>
-                        </li>
-                    </ul>
+              <li>
+                <label for="contactPreference">Contact Preference*</label>
+                <input
+                  type="text"
+                  id="contactPreference"
+                  name="contactPreference"
+                  placeholder="phone, email, mail"
+                  required />
+              </li>
+            </ul>
 
-                    <fieldset id="business">
-                        <legend>Comments/Questions</legend>
+            <fieldset id="business">
+              <legend>Comments/Questions</legend>
 
-                        <ul>
-                            <li>
-                                <label for="descriptionTextarea">Questions or Comments*</label>
-                                <textarea id="descriptionTextarea" name="descriptionTextarea"
-                                    placeholder="Briefly type comments or questions here" required></textarea>
-                            </li>
-                        </ul>
-                    </fieldset>
+              <ul>
+                <li>
+                  <label for="descriptionTextarea">Questions or Comments*</label>
+                  <textarea
+                    id="descriptionTextarea"
+                    name="descriptionTextarea"
+                    placeholder="Briefly type comments or questions here"
+                    required></textarea>
+                </li>
+              </ul>
+            </fieldset>
 
-                    <input type="hidden" id="crntdaytime">
+            <input type="hidden" id="crntdaytime" />
 
-                    <button type="submit" class="submitBtn">contact us</button>
-                </fieldset>
-            </section>
-        </form>
+            <button type="submit" class="submitBtn">contact us</button>
+          </fieldset>
+        </section>
+      </form>
 
-
-        <div class="map">
-            <h2>Bountiful Foods of Carlsbad, California</h2>
-            <div>
-                <p>
-                    We are a owner-operated company that caters to walk in traffic at our storefront in Carlsbad and,
-                    of course, we have many food trucks. We deliver and manage orders on the phone and via the website.  
-                </p>
-            </div>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88478052888!2d-117.35801350498429!3d33.12149986299404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1680361852174!5m2!1sen!2sus"
-                style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+      <div class="map">
+        <h2>Bountiful Foods of Carlsbad, California</h2>
+        <div>
+          <p>
+            We are a owner-operated company that caters to walk in traffic at our storefront in
+            Carlsbad and, of course, we have many food trucks. We deliver and manage orders on the
+            phone and via the website.
+          </p>
         </div>
 
-        <section class="hours">
-            <h2>Bountiful Foods</h2>
-            <div>
-                <p>
-                    <strong>365 Oceanside Rd <br>
-                        Carlsbad, California 92054</strong>
-                </p>
-                <p>http://www.bountifulfoods.com</p>
-                <p>Phone: (760) 524-3570</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88478052888!2d-117.35801350498429!3d33.12149986299404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1680361852174!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-                <strong>Bountiful Foods Hours</strong> <br>
-                Monday - Friday: 9:00 am - 5:00 pm <br>
-                Saturday: Closed <br>
-                Sunday: Closed
-            </div>
-            <br>
-            <h2><strong>Points of Contact</strong></h2>
+      <section class="hours">
+        <h2>Bountiful Foods</h2>
+        <div>
+          <p>
+            <strong
+              >365 Oceanside Rd <br />
+              Carlsbad, California 92054</strong
+            >
+          </p>
+          <p>http://www.bountifulfoods.com</p>
+          <p>Phone: (760) 524-3570</p>
 
-            <div>
-                <p>
-                    <strong>Steve Hunter</strong> - Chief Executive Officer - (760)-524-1010 Option 1 -
-                    ceo@BountifulFoods.com
-                </p>
-            </div>
-            <div>
-                <p>
-                    <strong>Michelle Covert</strong> - Business Operations Manager - (760)-524-1010 Option 2
-                    - officemgr@BountifulFoods.com
-                </p>
-            </div>
-            <div>
-                <p>
-                    <strong>Jen Emery</strong> - Food Truck Manager - (760)-524-1010 Option 3 -
-                    truckinfo@BountifulFoods.com
-                </p>
-            </div>
-            <div>
-                <p>
-                    <strong>Larissa Hale</strong> - Marketing and Communications Coordinator -
-                    (760)-524-1010 Option 4 - marketing@BountifulFoods.com
-                </p>
-            </div>
-        </section>
+          <strong>Bountiful Foods Hours</strong> <br />
+          Monday - Friday: 9:00 am - 5:00 pm <br />
+          Saturday: Closed <br />
+          Sunday: Closed
+        </div>
+        <br />
+        <h2><strong>Points of Contact</strong></h2>
 
-
-
+        <div>
+          <p>
+            <strong>Steve Hunter</strong> - Chief Executive Officer - (760)-524-1010 Option 1 -
+            ceo@BountifulFoods.com
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Michelle Covert</strong> - Business Operations Manager - (760)-524-1010 Option 2
+            - officemgr@BountifulFoods.com
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Jen Emery</strong> - Food Truck Manager - (760)-524-1010 Option 3 -
+            truckinfo@BountifulFoods.com
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Larissa Hale</strong> - Marketing and Communications Coordinator -
+            (760)-524-1010 Option 4 - marketing@BountifulFoods.com
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div>
-            <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo"></a>
-            <div id="address">
-                <p>Bountiful Foods</p>
-                <p>365 Oceanside Rd, Carlsbad, California 92054</p>
-            </div>
+      <div>
+        <a href="final-project"><img src="images/Bntfl-foods-icon.jpg" alt="logo" /></a>
+        <div id="address">
+          <p>Bountiful Foods</p>
+          <p>365 Oceanside Rd, Carlsbad, California 92054</p>
         </div>
+      </div>
 
-        <div>
-            <p>
-                &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 -
-                Final Project
-            </p>
+      <div>
+        <p>
+          &copy;2023 <span id="currentyear"></span> | Diane Chase | Bountiful Foods | WDD 230 -
+          Final Project
+        </p>
 
-            <div id="lastModified"></div>
-        </div>
-        <div id="webaddress">
-            <p>http://www.BountifulFoods.com</p>
-            <p>(760) 524-3570</p>
-            <a
-                href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">
-                location map</a>
-            <br>
-            <a href="https://openweathermap.org"> open weather map </a>
-        </div>
+        <div id="lastModified"></div>
+      </div>
+      <div id="webaddress">
+        <p>http://www.BountifulFoods.com</p>
+        <p>(760) 524-3570</p>
+        <a
+          href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">
+          location map</a
+        >
+        <br />
+        <a href="https://openweathermap.org"> open weather map </a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
